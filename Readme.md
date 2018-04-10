@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Мюнц](https://up.htmlacademy.ru/adaptive/14/user/181069).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Сигов](https://up.htmlacademy.ru/adaptive/14/user/17860).
 
 ---
 

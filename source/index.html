@@ -3,13 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__small-logo">
-        <img class="page-header__small-logo-image" src="img/logo-mobile.svg" width="102" height="83" alt="Седона">
-      </a>
-      <img class="page-header__text-logo" src="img/text-logo-mobile.svg" width="282" height="214" alt="Добро пожаловать в Седону">
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
@@ -27,14 +24,18 @@
           </li>
         </ul>
       </nav>
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="102" height="83" alt="Седона">
+      </a>
+      <h1 class="page-header__title-index">
+        Добро пожаловать в Седону
+      </h1>
     </header>
 
     <main class="page-main">
 
-      <h1 class="visually-hidden">Седона - отдых в Аризоне</h1>
-
       <section class="features">
-        <h2 class="visually-hidden">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <h2 class="features__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="features__intro">
           Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
         </p>
@@ -134,13 +135,13 @@
       <h2 class="footer-page__title">#visitsedona</h2>
       <ul class="footer-page__list social-list">
         <li class="social-list__item">
-          <a class="social-list__link button button--twitter">Twitter</a>
+          <a class="social-list__link social-list__link--twitter">Twitter</a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link button button--facebook">Facebook</a>
+          <a class="social-list__link social-list__link--facebook">Facebook</a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link button button--youtube">Youtube</a>
+          <a class="social-list__link social-list__link--youtube">Youtube</a>
         </li>
       </ul>
       <div class="page-footer__copyright copyright">

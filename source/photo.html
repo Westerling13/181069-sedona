@@ -3,13 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="102" height="83" alt="Седона">
-      </a>
-      <img class="page-header__text-logo page-header__text-logo--small" src="img/text-logo-small-mobile.svg" width="282" height="214" alt="Добро пожаловать в Седону">
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
@@ -27,11 +24,15 @@
           </li>
         </ul>
       </nav>
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="102" height="83" alt="Седона">
+      </a>
+      <h1 class="page-header__title">
+        Добро пожаловать в Седону
+      </h1>
     </header>
 
     <main class="page-main">
-
-      <h1 class="visually-hidden">Поделитесь мвоими фотографиями</h1>
 
       <section class="intro">
         <h2 class="intro__title">Фото и видео</h2>
@@ -44,76 +45,84 @@
         <h2 class="visually-hidden">Галерея</h2>
         <ul class="gallery__list">
 
-          <li class="gallery__item photo-card">
-            <figure class="photo-card__photo">
-              <a class="photo-card__link">
-                <img class="photo-card__image" src="img/gallery-photo-01.jpg" width="280" height="280" alt="Фотография-01">
-              </a>
-              <figcaption class="photo-card__caption">
-                Неродные просторы
-              </figcaption>
-            </figure>
-            <p class="photo-card__author">
-              Автор фото: Борис
-            </p>
-            <p class="photo-card__like">
-              <img class="photo-card__like-icon" src="img/like.svg" width="23" height="21" alt="Like">
-              <span class="photo-card__like-indicator">1350</span>
-            </p>
+          <li class="gallery__item">
+            <article class="photo-card">
+              <figure class="photo-card__photo">
+                <a class="photo-card__link">
+                  <img class="photo-card__image" src="img/gallery-photo-01.jpg" width="280" height="280" alt="Фотография-01">
+                </a>
+                <figcaption class="photo-card__caption">
+                  Неродные просторы
+                </figcaption>
+              </figure>
+              <p class="photo-card__author">
+                Автор фото: Борис
+              </p>
+              <p class="photo-card__like">
+                <img class="photo-card__like-icon" src="img/like.svg" width="23" height="21" alt="Like">
+                <span class="photo-card__like-indicator">1350</span>
+              </p>
+            </article>
           </li>
 
-          <li class="gallery__item photo-card">
-            <figure class="photo-card__photo">
-              <a class="photo-card__link">
-                <img class="photo-card__image" src="img/gallery-photo-02.jpg" width="280" height="280" alt="Фотография-02">
-              </a>
-              <figcaption class="photo-card__caption">
-                Местная растительность
-              </figcaption>
-            </figure>
-            <p class="photo-card__author">
-              Автор фото: Сергей
-            </p>
-            <p class="photo-card__like">
-              <img class="photo-card__like-icon" src="img/like.svg" width="23" height="21" alt="Like">
-              <span class="photo-card__like-indicator">143</span>
-            </p>
+          <li class="gallery__item">
+            <article class="photo-card">
+              <figure class="photo-card__photo">
+                <a class="photo-card__link">
+                  <img class="photo-card__image" src="img/gallery-photo-02.jpg" width="280" height="280" alt="Фотография-02">
+                </a>
+                <figcaption class="photo-card__caption">
+                  Местная растительность
+                </figcaption>
+              </figure>
+              <p class="photo-card__author">
+                Автор фото: Сергей
+              </p>
+              <p class="photo-card__like">
+                <img class="photo-card__like-icon" src="img/like.svg" width="23" height="21" alt="Like">
+                <span class="photo-card__like-indicator">143</span>
+              </p>
+            </article>
           </li>
 
-          <li class="gallery__item photo-card">
-            <figure class="photo-card__photo">
-              <a class="photo-card__link">
-                <img class="photo-card__image" src="img/gallery-photo-03.jpg" width="280" height="280" alt="Фотография-03">
-              </a>
-              <figcaption class="photo-card__caption">
-                Дорога на север
-              </figcaption>
-            </figure>
-            <p class="photo-card__author">
-              Автор фото: Петр
-            </p>
-            <p class="photo-card__like">
-              <img class="photo-card__like-icon" src="img/like.svg" width="23" height="21" alt="Like">
-              <span class="photo-card__like-indicator">96</span>
-            </p>
+          <li class="gallery__item">
+            <article class="photo-card">
+              <figure class="photo-card__photo">
+                <a class="photo-card__link">
+                  <img class="photo-card__image" src="img/gallery-photo-03.jpg" width="280" height="280" alt="Фотография-03">
+                </a>
+                <figcaption class="photo-card__caption">
+                  Дорога на север
+                </figcaption>
+              </figure>
+              <p class="photo-card__author">
+                Автор фото: Петр
+              </p>
+              <p class="photo-card__like">
+                <img class="photo-card__like-icon" src="img/like.svg" width="23" height="21" alt="Like">
+                <span class="photo-card__like-indicator">96</span>
+              </p>
+            </article>
           </li>
 
-          <li class="gallery__item photo-card">
-            <figure class="photo-card__photo">
-              <a class="photo-card__link">
-                <img class="photo-card__image" src="img/gallery-photo-04.jpg" width="280" height="280" alt="Фотография-04">
-              </a>
-              <figcaption class="photo-card__caption">
-                Мост Дьявола
-              </figcaption>
-            </figure>
-            <p class="photo-card__author">
-              Автор фото: Антон
-            </p>
-            <p class="photo-card__like">
-              <img class="photo-card__like-icon" src="img/like.svg" width="23" height="21" alt="Like">
-              <span class="photo-card__like-indicator">254</span>
-            </p>
+          <li class="gallery__item">
+            <article class="photo-card">
+              <figure class="photo-card__photo">
+                <a class="photo-card__link">
+                  <img class="photo-card__image" src="img/gallery-photo-04.jpg" width="280" height="280" alt="Фотография-04">
+                </a>
+                <figcaption class="photo-card__caption">
+                  Мост Дьявола
+                </figcaption>
+              </figure>
+              <p class="photo-card__author">
+                Автор фото: Антон
+              </p>
+              <p class="photo-card__like">
+                <img class="photo-card__like-icon" src="img/like.svg" width="23" height="21" alt="Like">
+                <span class="photo-card__like-indicator">254</span>
+              </p>
+            </article>
           </li>
 
         </ul>
@@ -149,13 +158,13 @@
       <h2 class="footer-page__title">#visitsedona</h2>
       <ul class="footer-page__list social-list">
         <li class="social-list__item">
-          <a class="social-list__link button button--twitter">Twitter</a>
+          <a class="social-list__link social-list__link--twitter">Twitter</a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link button button--facebook">Facebook</a>
+          <a class="social-list__link social-list__link--facebook">Facebook</a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link button button--youtube">Youtube</a>
+          <a class="social-list__link social-list__link--youtube">Youtube</a>
         </li>
       </ul>
       <div class="page-footer__copyright copyright">

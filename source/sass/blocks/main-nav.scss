@@ -1,0 +1,31 @@
+.main-nav {
+  position: relative;
+
+  font-family: $main-font-family;
+}
+
+.main-nav__list {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 10;
+
+  width: 23px;
+  height: 23px;
+  padding: 0;
+
+  font-size: 0;
+
+  border: none;
+  background-color: transparent;
+  background-image: url("../../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}

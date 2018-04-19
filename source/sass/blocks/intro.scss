@@ -1,0 +1,24 @@
+.intro {
+  @include width(320px);
+  font-family: $main-font-family;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.intro__title {
+  margin: 0;
+  padding: 0;
+  font-size: $font-size-title;
+  line-height: $line-height-title;
+  font-weight: $font-weight-bold;
+  color: $main-color-second;
+}
+
+.intro__description {
+  margin: 0;
+  padding: 0;
+  font-size: $font-size-descrition;
+  line-height: $line-height-title;
+  font-weight: $font-weight-regular;
+  color: $extra-color-second;
+}

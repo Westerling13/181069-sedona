@@ -1,0 +1,88 @@
+.feature {
+  position: relative;
+  @include width(320px);
+  padding: 26px 0 10px;
+  font-family: $main-font-family;
+  text-transform: uppercase;
+  text-align: center;
+
+  &--active {
+    padding: 39px 0 0;
+    background-color: $main-color-first;
+  }
+}
+
+.feature__wrapper {
+  position: relative;
+
+  width: 320px;
+  padding-top: 16px;
+  background-color: $main-color-first;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0%;
+    z-index: 10;
+
+    display: block;
+    width: 0px;
+    height: 0px;
+
+    border: 160px solid #ffffff;
+    border-top-width: 15px;
+    border-bottom-width: 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+}
+
+.feature__title {
+  margin: 0 0 10px;
+
+  font-size: $font-size-title;
+  line-height: $line-height-title;
+  font-weight: $font-weight-bold;
+  color: $main-color-second;
+
+  &--active {
+    color: $extra-color-first;
+  }
+}
+
+.feature__number {
+  display: block;
+  margin-bottom: 14px;
+
+  font-size: $font-size-descrition;
+  line-height: $line-height-description;
+  font-weight: $font-weight-regular;
+  color: $extra-color-second;
+
+  &--active {
+    color: $extra-color-first;
+  }
+}
+
+.feature__description {
+  margin: 0 0 40px;
+  padding: 0 5px 0;
+
+  font-size: $font-size-descrition;
+  line-height: $line-height-description;
+  font-weight: $font-weight-regular;
+  color: $extra-color-second;
+
+  &--active {
+    color: $extra-color-first;
+  }
+}
+
+.feature_image-wrapper {
+  margin: 0;
+}
+
+.feature__image {
+  display: block;
+}

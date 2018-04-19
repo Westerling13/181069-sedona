@@ -1,0 +1,47 @@
+.site-list {
+  position: relative;
+  font-family: $main-font-family;
+
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.site-list__link {
+  display: block;
+  @include width(320px);
+  padding: 7px 0;
+
+  font-size: $font-size-title;
+  line-height: 40px;
+  font-weight: $font-weight-bold;
+  text-decoration: none;
+  text-align: center;
+  color: $extra-color-first;
+
+  border-top: 1px solid #9bc2db;
+  border-bottom: 1px solid #678fa8;
+  background-color: $main-color-first;
+  cursor: pointer;
+
+  &:hover {
+    border-top-color: #86b2cd;
+    background-color: $main-color-first-hover;
+  }
+
+  &:active {
+    color: rgba($extra-color-first, 0.3);
+
+    background-color: $main-color-first-active;
+  }
+
+  &--first-child {
+    border-top-color: $main-color-first;
+  }
+
+  &--last-child {
+    border-bottom-color: none;
+    background-image: url("../../img/link-gradient.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}

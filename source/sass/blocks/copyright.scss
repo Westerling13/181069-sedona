@@ -1,0 +1,19 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $main-font-family;
+  font-size: $font-size-descrition;
+  text-transform: uppercase;
+}
+
+.copyright__text {
+  margin: 0 13px 0 0;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-title;
+}
+
+.copyright__link {
+  display: block;
+  margin-top: 3px;
+}

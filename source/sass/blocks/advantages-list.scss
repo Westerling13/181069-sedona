@@ -1,54 +1,56 @@
 .advantages-list {
   list-style: none;
   margin: 0;
-  padding: 35px 20px 9px 70px;
+  padding: 25px 0 19px;
+  // padding: 35px 20px 9px 70px;
   background-color: $extra-color-first;
   text-align: left;
 }
 
 .advantages-list__item {
   position: relative;
+  padding: 10px 20px 18px 70px;
 
   &--house::before {
     content: "";
 
     position: absolute;
-    top: -10px;
-    left: -49px;
+    top: 0px;
+    left: 21px;
 
     width: 39px;
     height: 37px;
     background-image: url("../../img/icon-house.svg");
     background-repeat: no-repeat;
-    background-size: 39px;
+    background-size: 100%;
   }
 
   &--gift::before {
     content: "";
 
     position: absolute;
-    top: -11px;
-    left: -45px;
+    top: -1px;
+    left: 25px;
 
     width: 32px;
     height: 38px;
     background-image: url("../../img/icon-gift.svg");
     background-repeat: no-repeat;
-    background-size: 32px;
+    background-size: 100%;
   }
 
   &--food::before {
     content: "";
 
     position: absolute;
-    top: -5px;
-    left: -51px;
+    top: 5px;
+    left: 19px;
 
-    width: 40px;
-    height: 35px;
+    width: 39px;
+    height: 36px;
     background-image: url("../../img/icon-burger.svg");
     background-repeat: no-repeat;
-    background-size: 39px;
+    background-size: 100%;
   }
 }
 
@@ -61,9 +63,62 @@
 }
 
 .advantages-list__desctiption {
-  margin: 0 0 28px;
+  margin: 0 0 0px;
 
   font-size: $font-size-descrition;
   font-weight: $font-weight-regular;
   line-height: $line-height-description;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-list {
+    display: flex;
+    @include width(100%);
+    padding: 0;
+  }
+
+  .advantages-list__item {
+    @include width(33.3%);
+    height: 331px;
+    padding: 160px 48px 0;
+
+    text-align: center;
+
+    &--gift {
+      order: 1;
+      padding: 160px 45px 0;
+    }
+
+    &::before {
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+
+    &--house::before {
+      top: 60px;
+
+      width: 75px;
+      height: 72px;
+    }
+
+    &--gift::before {
+      top: 58px;
+
+      width: 64px;
+      height: 76px;
+    }
+
+    &--food::before {
+      top: 63px;
+
+      width: 77px;
+      height: 69px;
+    }
+  }
+
+  .advantages-list__title {
+    margin-bottom: 21px;
+    font-size: $font-size-title-big;
+  }
 }

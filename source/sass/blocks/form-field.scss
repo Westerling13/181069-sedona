@@ -1,0 +1,44 @@
+.form-field {
+  @include width(100%);
+  margin: 0;
+  padding: 0 0 0;
+
+  font-family: $main-font-family;
+  text-transform: uppercase;
+
+  border: none;
+}
+
+.form-field__legend {
+  margin: auto;
+
+  font-size: $font-size-title;
+  line-height: $line-height-title;
+  font-weight: $font-weight-bold;
+}
+
+.form-field__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: $font-size-descrition;
+  line-height: $line-height-title;
+  font-weight: $font-weight-regular;
+}
+
+.form-field__input-text {
+  font-family: $main-font-family;
+  font-size: $font-size-title;
+  line-height: $line-height-title;
+  font-weight: $font-weight-bold;
+  color: $main-color-second;
+  height: 58px;
+
+  border: none;
+  background-color: darken($extra-color-first, 5%);
+
+  &::placeholder {
+    color: $main-color-second;
+  }
+}

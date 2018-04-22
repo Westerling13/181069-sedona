@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic');
-@import 'normalize';
 
 @import 'scaffolding';
 @import 'variables';
@@ -18,4 +17,9 @@
 @import 'blocks/page-footer';
 @import 'blocks/social-list';
 @import 'blocks/copyright';
-@import 'blocks/page'
+@import 'blocks/page';
+@import 'blocks/gallery';
+@import 'blocks/photo-card';
+@import 'blocks/video';
+@import 'blocks/video-player';
+@import 'blocks/controls';

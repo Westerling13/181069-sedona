@@ -1,0 +1,21 @@
+.controls {
+  display: flex;
+  justify-content: space-between;
+  @include width(87.5%);
+  padding: 22px 23px 20px;
+
+  background-color: darken($extra-color-first, 5%);
+}
+
+.controls__button {
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+}
+
+.controls__button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 83px;
+}

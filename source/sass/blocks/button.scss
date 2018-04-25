@@ -25,32 +25,6 @@
 
     background-color: $main-color-first-active;
   }
-
-  &--menu {
-    @include width(320px);
-    padding: 7px 0;
-    font-size: $font-size-title;
-
-    line-height: 40px;
-
-    border-top: 1px solid #9bc2db;
-    border-bottom: 1px solid #678fa8;
-  }
-
-  &--menu:hover {
-    border-top-color: #86b2cd;
-  }
-
-  &--first-child {
-    border-top: none;
-  }
-
-  &--last-child {
-    border-bottom: none;
-    background-image: url("../../img/link-gradient.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
-  }
 }
 
 @media (min-width: $tablet-width) {

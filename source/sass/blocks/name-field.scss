@@ -1,4 +1,4 @@
-.form-field {
+.name-field {
   @include width(100%);
   margin: 0;
   padding: 0 0 0;
@@ -7,10 +7,9 @@
   text-transform: uppercase;
 
   border: none;
-
 }
 
-.form-field__legend {
+.name-field__legend {
   display: block;
   width: 100%;
   margin: 0 0 19px;
@@ -24,15 +23,11 @@
   border-top: 1px solid #e5e5e5;
 }
 
-.form-field__wrapper {
+.name-field__wrapper {
   padding: 0 21px 6px;
-
-  &--contact {
-
-  }
 }
 
-.form-field__label {
+.name-field__label {
   position: relative;
 
   display: flex;
@@ -45,41 +40,13 @@
   font-size: $font-size-descrition;
   line-height: $line-height-title;
   font-weight: $font-weight-regular;
-
-  &--contact {
-    margin: 0 0 12px;
-  }
-
-  &--contact::before {
-    content: "";
-
-    position: absolute;
-    bottom: 0;
-    right: 0;
-
-    display: block;
-    width: 58px;
-    height: 58px;
-
-    background-color: #e6e6e6;
-  }
 }
 
-.form-field__label-text {
+.name-field__label-text {
   margin: 0 15px 0 0;
-
-    &--contact {
-      margin: 0 0 7px 21px;
-    }
 }
 
-.form-field__label-toggle {
-  display: flex;
-  flex-wrap: wrap;
-  @include width(100%);
-}
-
-.form-field__input-text {
+.name-field__input {
   display: block;
 
   flex-grow: 1;

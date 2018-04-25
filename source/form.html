@@ -40,9 +40,9 @@
 
       <main class="page-main">
 
-        <section class="intro">
-          <h2 class="intro__title">Оставьте свой отзыв</h2>
-          <p class="intro__description">
+        <section class="intro-form">
+          <h2 class="intro-form__title">Оставьте свой отзыв</h2>
+          <p class="intro-form__description">
             Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
           </p>
         </section>
@@ -51,92 +51,102 @@
           <h2 class="visually-hidden">Форма отправки отзыва</h2>
           <form class="review__form" action="https://echo.htmlacademy.ru" method="post">
 
-            <fieldset class="review__fieldset form-field">
-              <legend class="form-field__legend">
+            <fieldset class="review__fieldset name-field">
+              <legend class="name-field__legend">
                 Представьтесь:
               </legend>
-              <label class="form-field__label">
-                <span class="form-field__label-text">Имя<sup>*</sup>:</span>
-                <input class="form-field__input-text" type="text" name="first-name" placeholder="Петр">
-              </label>
-              <label class="form-field__label">
-                <span class="form-field__label-text">Фамилия<sup>*</sup>:</span>
-                <input class="form-field__input-text" type="text" name="second-name" placeholder="Иванов">
-              </label>
-              <label class="form-field__label">
-                <span class="form-field__label-text">Отчество:</span>
-                <input class="form-field__input-text" type="text" name="patronymic" placeholder="Александрович">
-              </label>
+              <div class="name-field__wrapper">
+                <label class="name-field__label">
+                  <span class="name-field__label-text">Имя*:</span>
+                  <input class="name-field__input" type="text" name="first-name" placeholder="Петр">
+                </label>
+                <label class="name-field__label">
+                  <span class="name-field__label-text">Фамилия*:</span>
+                  <input class="name-field__input" type="text" name="second-name" placeholder="Иванов">
+                </label>
+                <label class="name-field__label">
+                  <span class="name-field__label-text">Отчество:</span>
+                  <input class="name-field__input" type="text" name="patronymic" placeholder="Александрович">
+                </label>
+              </div>
+
             </fieldset>
 
-            <fieldset class="review__fieldset form-field">
-              <legend class="form-field__legend">
+            <fieldset class="review__fieldset contact-field">
+              <legend class="contact-field__legend">
                 Контактная информация:
               </legend>
-              <label class="form-field__label">Контактный телефон<sup>*</sup>:
-                <input class="form-field__input-text" type="number" name="number" placeholder="Введите телефон">
-                <!-- Псевдоэлемент с иконкой-трубкой -->
-              </label>
-              <label class="form-field__label">Электронная почта<sup>*</sup>:
-                <input class="form-field__input-text" type="email" name="email" placeholder="Введите e-mail">
-                <!-- Псевдоэлемент с иконкой-конвертом -->
-              </label>
+              <div class="contact-field__wrapper">
+                <label class="contact-field__label contact-field__label--number">
+                  <span class="contact-field__label-text">Контактный телефон*:</span>
+                  <input class="contact-field__input" type="number" name="number" placeholder="Введите телефон">
+                </label>
+                <label class="contact-field__label contact-field__label--email">
+                  <span class="contact-field__label-text">Электронная почта*:</span>
+                  <input class="contact-field__input" type="email" name="email" placeholder="Введите e-mail">
+                </label>
+              </div>
             </fieldset>
 
-            <fieldset class="review__fieldset form-field">
-              <legend class="form-field__legend">
+            <fieldset class="review__fieldset radio-field">
+              <legend class="radio-field__legend">
                 Ваше общее впечатление:
               </legend>
-              <label class="form-field__label-toggle">
-                <input class="form-field__input-radio" type="radio" name="radio" value="positive" checked>
-                <span class="form-field__radio-indicator"></span>
-                Скорее положительное
-              </label>
-              <label class="form-field__label-toggle">
-                <input class="form-field__input-radio" type="radio" name="radio" value="negative">
-                <span class="form-field__radio-indicator"></span>
-                Скорее отрицательное
-              </label>
-              <label class="form-field__label-toggle">
-                <input class="form-field__input-radio" type="radio" name="radio" value="zero">
-                <span class="form-field__radio-indicator"></span>
-                Затрудняюсь ответить
-              </label>
+              <div class="radio-field__wrapper">
+                <label class="radio-field__label">
+                  <input class="radio-field__input" type="radio" name="radio" value="positive" checked>
+                  <span class="radio-field__indicator"></span>
+                  <span class="radio-field__label-text">Скорее положительное</span>
+                </label>
+                <label class="radio-field__label">
+                  <input class="radio-field__input" type="radio" name="radio" value="negative">
+                  <span class="radio-field__indicator"></span>
+                  <span class="radio-field__label-text">Скорее отрицательное</span>
+                </label>
+                <label class="radio-field__label">
+                  <input class="radio-field__input" type="radio" name="radio" value="zero">
+                  <span class="radio-field__indicator"></span>
+                  <span class="radio-field__label-text">Затрудняюсь ответить</span>
+                </label>
+              </div>
+
             </fieldset>
 
-            <fieldset class="review__fieldset form-field">
-              <legend class="form-field__legend">
+            <fieldset class="review__fieldset checkbox-field">
+              <legend class="checkbox-field__legend">
                 Посещенные достопримечательности:
               </legend>
-              <label class="form-field__label-toggle">
-                <input class="form-field__input-checkbox" type="checkbox" name="checkbox-bridge" checked>
-                <span class="form-field__checkbox-indicator"></span>
-                Мост Дьявола
-              </label>
-              <label class="form-field__label-toggle">
-                <input class="form-field__input-checkbox" type="checkbox" name="checkbox-mountain" checked>
-                <span class="form-field__checkbox-indicator"></span>
-                Гора-Колокол
-              </label>
-              <label class="form-field__label-toggle">
-                <input class="form-field__input-checkbox" type="checkbox" name="checkbox-park" checked>
-                <span class="form-field__checkbox-indicator"></span>
-                Сайд-парк
-              </label>
-              <label class="form-field__label-toggle">
-                <input class="form-field__input-checkbox" type="checkbox" name="checkbox-cliffs">
-                <span class="form-field__checkbox-indicator"></span>
-                Красные скалы
-              </label>
+              <div class="checkbox-field__wrapper">
+                <label class="checkbox-field__label">
+                  <input class="checkbox-field__input" type="checkbox" name="checkbox-bridge" checked>
+                  <span class="checkbox-field__indicator"></span>
+                  <span class="checkbox-field__label-text">Мост Дьявола</span>
+                </label>
+                <label class="checkbox-field__label">
+                  <input class="checkbox-field__input" type="checkbox" name="checkbox-mountain" checked>
+                  <span class="checkbox-field__indicator"></span>
+                  <span class="checkbox-field__label-text">Гора-Колокол</span>
+                </label>
+                <label class="checkbox-field__label">
+                  <input class="checkbox-field__input" type="checkbox" name="checkbox-park" checked>
+                  <span class="checkbox-field__indicator"></span>
+                  <span class="checkbox-field__label-text">Слайд-парк</span>
+                </label>
+                <label class="checkbox-field__label">
+                  <input class="checkbox-field__input" type="checkbox" name="checkbox-cliffs">
+                  <span class="checkbox-field__indicator"></span>
+                  <span class="checkbox-field__label-text">Красные скалы</span>
+                </label>
+              </div>
             </fieldset>
 
-            <fieldset class="review__fieldset form-field">
-              <legend class="form-field__legend">
+            <fieldset class="review__fieldset textarea-field">
+              <legend class="textarea-field__legend">
                 Опишите свои эмоции:
               </legend>
-              <textarea class="form-field__input-text" name="comment">
-                Опишите подробно все свои восторги
-              </textarea>
+              <div class="textarea-field__wrapper">
+                <textarea class="textarea-field__input" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+              </div>
             </fieldset>
 
             <button class="review__button button" type="submit">Отправить отзыв</button>
@@ -144,20 +154,23 @@
           </form>
         </section>
 
-        <section class="review__modal modal modal-negative">
+        <section class="review__modal review__modal--negative modal modal--negative">
           <h2 class="modal__title">Что-то пошло не так!</h2>
           <p class="modal__text">
             Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
           </p>
-          <button class="modal__button button modal--positive">Ок</button>
+          <button class="modal__button button">Ок</button>
         </section>
 
-        <section class="review__modal modal">
+        <section class="review__modal review__modal modal">
           <h2 class="modal__title">Ваш отзыв отправлен!</h2>
           <p class="modal__text">
-            Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+            Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>
+            В ближайшее время мы опубликуем его на сайте.
           </p>
-          <button class="modal__button button">Закрыть окно</button>
+          <div class="modal__button-wrapper">
+            <button class="modal__button button" type="button">Закрыть окно</button>
+          </div>
         </section>
 
       </main>

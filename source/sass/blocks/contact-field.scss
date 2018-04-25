@@ -24,7 +24,7 @@
 }
 
 .contact-field__wrapper {
-  padding:: 0 21px 15px;
+  padding: 0 21px 15px;
 }
 
 .contact-field__label {
@@ -34,6 +34,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
+
   @include width(100%);
   margin: 0 0 12px;
 
@@ -74,6 +75,7 @@
   display: block;
 
   flex-grow: 1;
+
   @include width(180px);
   height: 58px;
   padding: 0 58px 0 21px;

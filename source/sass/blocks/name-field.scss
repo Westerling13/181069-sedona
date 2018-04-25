@@ -34,6 +34,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
+
   @include width(100%);
   margin: 0 0 20px;
 
@@ -48,8 +49,8 @@
 
 .name-field__input {
   display: block;
-
   flex-grow: 1;
+
   @include width(180px);
   height: 58px;
   padding: 0 0 0 21px;

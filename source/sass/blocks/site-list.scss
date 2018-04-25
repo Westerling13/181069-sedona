@@ -1,7 +1,7 @@
 .site-list {
   position: absolute;
+
   @include width(100%);
-  // font-family: $main-font-family;
 
   display: none;
 
@@ -19,6 +19,7 @@
 
 .site-list__link {
   display: block;
+
   @include width(100%);
   padding: 7px 0;
 

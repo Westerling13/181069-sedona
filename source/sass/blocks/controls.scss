@@ -1,6 +1,7 @@
 .controls {
   display: flex;
   justify-content: space-between;
+
   @include width(87.5%);
   padding: 22px 23px 24px;
 

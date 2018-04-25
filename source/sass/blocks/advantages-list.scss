@@ -14,7 +14,7 @@
     content: "";
 
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 21px;
 
     width: 39px;
@@ -62,7 +62,7 @@
 }
 
 .advantages-list__desctiption {
-  margin: 0 0 0px;
+  margin: 0;
 
   font-size: $font-size-descrition;
   font-weight: $font-weight-regular;
@@ -72,6 +72,7 @@
 @media (min-width: $tablet-width) {
   .advantages-list {
     display: flex;
+
     @include width(100%);
     padding: 0;
   }

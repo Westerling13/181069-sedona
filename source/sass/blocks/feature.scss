@@ -21,11 +21,6 @@
   @include width(100%);
 }
 
-.feature__image-wrapper {
-  @include width(100%);
-  margin: 0;
-}
-
 .feature__title {
   @include width(100%);
   margin: 0 0 10px;
@@ -42,6 +37,7 @@
 
 .feature__number {
   display: block;
+
   @include width(100%);
   margin-bottom: 14px;
 
@@ -88,11 +84,13 @@
   .feature {
     display: flex;
     flex-wrap: wrap;
+
     @include width(33.3%);
     padding: 0;
 
     &--special {
       padding: 0;
+
       @include width(100%);
     }
   }
@@ -152,7 +150,7 @@
 
   .feature__description {
     &--special {
-    padding: 0 35px;
+      padding: 0 35px;
     }
   }
 }

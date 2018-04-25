@@ -24,7 +24,7 @@
 }
 
 .radio-field__wrapper {
-  padding:: 0 21px 17px;
+  padding: 0 21px 17px;
 }
 
 .radio-field__label {
@@ -34,11 +34,12 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
+
   @include width(100%);
   margin: 0 0 12px;
 
   font-size: 18px;
-  line-height: 26px;;
+  line-height: 26px;
   font-weight: $font-weight-bold;
 }
 

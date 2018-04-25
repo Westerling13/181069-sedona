@@ -1,0 +1,156 @@
+.feature {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  // @include width(320px);
+  @include width(100%);
+  padding: 26px 0 10px;
+  font-family: $main-font-family;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: darken($extra-color-first, 6.5%);
+
+  &--special {
+    padding: 39px 0 0;
+    background-color: $main-color-first;
+  }
+}
+
+.feature__wrapper {
+  @include width(100%);
+}
+
+.feature__title {
+  @include width(100%);
+  margin: 0 0 10px;
+
+  font-size: $font-size-title;
+  line-height: $line-height-title;
+  font-weight: $font-weight-bold;
+  color: $main-color-second;
+
+  &--special {
+    color: $extra-color-first;
+  }
+}
+
+.feature__number {
+  display: block;
+
+  @include width(100%);
+  margin-bottom: 14px;
+
+  font-size: $font-size-descrition;
+  line-height: $line-height-description;
+  font-weight: $font-weight-regular;
+  color: $extra-color-second;
+
+  &--special {
+    color: $extra-color-first;
+  }
+}
+
+.feature__description {
+  @include width(100%);
+  margin: 0 0 19px;
+  padding: 0 35px 0;
+
+  font-size: $font-size-descrition;
+  line-height: $line-height-description;
+  font-weight: $font-weight-regular;
+  color: $extra-color-second;
+
+  &--special {
+    margin: 0 0 40px;
+    padding: 0 15px 0;
+    color: $extra-color-first;
+  }
+}
+
+.feature__image-wrapper {
+  @include width(100%);
+  margin: 0;
+
+  overflow: hidden;
+}
+
+.feature__image {
+  @include width(100%);
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .feature {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include width(33.3%);
+    padding: 0;
+
+    &--special {
+      padding: 0;
+
+      @include width(100%);
+    }
+  }
+
+  .feature__wrapper {
+    @include width(100%);
+    height: 255px;
+    padding: 47px 48px 10px;
+
+    &--special {
+      @include width(33.3%);
+      padding: 45px 45px 10px;
+    }
+
+    &--reverse {
+      order: 1;
+    }
+  }
+
+  .feature__title {
+    font-size: $font-size-title-big;
+    margin: 0 0 10px;
+  }
+
+  .feature__number {
+    margin: 0 0 20px;
+  }
+
+  .feature__description {
+    margin: 0;
+    padding: 0;
+  }
+
+  .feature__image-wrapper {
+    @include width(66.7%);
+    height: 255px;
+  }
+
+  .feature__image {
+    @include width(100%);
+    overflow: hidden;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feature__wrapper {
+    padding: 46px 55px 0;
+
+    &--special {
+      padding: 52px 55px 0;
+    }
+  }
+
+  .feature__title {
+    padding: 0 65px;
+  }
+
+  .feature__description {
+    &--special {
+      padding: 0 35px;
+    }
+  }
+}

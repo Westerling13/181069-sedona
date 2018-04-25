@@ -1,0 +1,10 @@
+.gallery {
+  @include width(100%);
+  font-family: $main-font-family;
+}
+
+.gallery__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

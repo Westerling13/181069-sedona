@@ -1,0 +1,124 @@
+.site-list {
+  position: absolute;
+
+  @include width(100%);
+
+  display: none;
+
+  text-transform: uppercase;
+  list-style: none;
+
+  &--active {
+    display: block;
+    top: -223px;
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
+}
+
+.site-list__link {
+  display: block;
+
+  @include width(100%);
+  padding: 7px 0;
+
+  font-size: $font-size-title;
+  font-weight: $font-weight-bold;
+  line-height: 40px;
+  text-decoration: none;
+  text-align: center;
+  color: $extra-color-first;
+
+  border-top: 1px solid #9bc2db;
+  border-bottom: 1px solid #678fa8;
+  background-color: $main-color-first;
+  cursor: pointer;
+
+  &:hover {
+    border-top-color: #86b2cd;
+
+    background-color: $main-color-first-hover;
+  }
+
+  &:active {
+    color: rgba($extra-color-first, 0.3);
+
+    background-color: $main-color-first-active;
+  }
+
+  &--first-child {
+    border-top: none;
+    padding-top: 8px;
+  }
+
+  &--last-child {
+    border-bottom: none;
+    background-image: url("../../img/link-gradient.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    // width: $tablet-width;
+    @include width(100%);
+    position: static;
+
+    display: flex;
+    // justify-content: flex-start;
+    justify-content: space-between;
+
+    transform: none;
+  }
+
+  .site-list__item {
+    &:nth-child(3) {
+      margin-left: 155px;
+      // padding-left: 5px;
+    }
+  }
+
+  .site-list__link {
+    font-size: $font-size-title - 4;
+    color: $extra-color-second;
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    width: 154px;
+
+    &:hover {
+      color: $main-color-first;
+      background-color: transparent;
+    }
+
+    &:active {
+      color: rgba($main-color-second, 0.3);
+    }
+
+    &--active {
+      color: $menu-active-color;
+    }
+
+    &--active:hover {
+      color: $menu-active-hover-color;
+    }
+
+    &--active:active {
+      color: rgba($menu-active-hover-color, 0.3);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    padding: 0 42px 0;
+  }
+
+  .site-list__item {
+    &:nth-child(3) {
+      margin-left: 245px;
+    }
+  }
+}

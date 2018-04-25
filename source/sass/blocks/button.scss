@@ -1,0 +1,28 @@
+.button {
+  display: block;
+  padding: 16px 0;
+
+  font-family: $main-font-family;
+  font-size: $font-size-button;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-button;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $extra-color-first;
+
+  border: none;
+  background-color: $main-color-first;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $main-color-first-hover;
+  }
+
+  &:active {
+    color: rgba($extra-color-first, 0.3);
+
+    background-color: $main-color-first-active;
+  }
+}

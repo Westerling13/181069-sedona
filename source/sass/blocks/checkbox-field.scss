@@ -1,0 +1,66 @@
+.checkbox-field {
+  @include width(100%);
+  margin: 0;
+  padding: 0 0 0;
+
+  font-family: $main-font-family;
+
+  border: none;
+}
+
+.checkbox-field__legend {
+  display: block;
+  width: 100%;
+  margin: 0 0 15px;
+  padding: 19px 0 0;
+
+  font-size: $font-size-title;
+  line-height: $line-height-title;
+  font-weight: $font-weight-bold;
+  text-align: center;
+  text-transform: uppercase;
+
+  border-top: 1px solid #e5e5e5;
+}
+
+.checkbox-field__wrapper {
+  padding: 0 21px 2px;
+}
+
+.checkbox-field__label {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  @include width(100%);
+  margin: 0 0 24px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: $font-weight-bold;
+}
+
+.checkbox-field__indicator {
+  position: relative;
+
+  display: block;
+  width: 56px;
+  height: 56px;
+  margin-right: 22px;
+
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.checkbox-field__input {
+  display: none;
+}
+
+.checkbox-field__input:checked + .checkbox-field__indicator {
+  background-image: url("../img/icon-tick.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}

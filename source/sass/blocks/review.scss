@@ -1,0 +1,22 @@
+.review {
+  position: relative;
+  padding: 0 0 37px;
+}
+
+.review__button {
+  @include width(87.5%);
+  margin: auto;
+}
+
+.review__modal {
+  position: absolute;
+  top: 1873px;
+  left: 50%;
+  z-index: 100;
+
+  transform: translateX(-50%);
+
+  &--negative {
+    top: 1543px;
+  }
+}

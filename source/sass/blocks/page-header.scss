@@ -1,21 +1,15 @@
 .page-header {
-  position: relative;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
   @include width(100%);
   padding: 0;
-
-  &--active {
-    margin-top: 223px;
-  }
 }
 
 .page-header__logo {
   position: absolute;
-  top: 0%;
+  top: -56px;
   left: 50%;
   display: block;
   text-align: center;
@@ -24,6 +18,8 @@
 }
 
 .page-header__wrapper {
+  position: relative;
+
   @include width(100%);
   background-image:
     url("../img/bg-intro-triangle-mobile.svg"),
@@ -67,6 +63,8 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
+    position: relative;
+
     @include width(100%);
 
     &--active {
@@ -74,7 +72,12 @@
     }
   }
 
+  .page-header__logo {
+    top: 0%;
+  }
+
   .page-header__wrapper {
+    position: static;
     @include width(100%);
     padding: 0;
   }

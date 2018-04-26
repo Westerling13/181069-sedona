@@ -1,19 +1,11 @@
 .site-list {
-  position: absolute;
-
   @include width(100%);
-
-  display: none;
 
   text-transform: uppercase;
   list-style: none;
 
-  &--active {
+  &--no-js {
     display: block;
-    top: -223px;
-    left: 50%;
-
-    transform: translateX(-50%);
   }
 }
 

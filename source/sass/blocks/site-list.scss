@@ -46,7 +46,7 @@
 
   &--last-child {
     border-bottom: none;
-    background-image: url("../../img/link-gradient.png");
+    background-image: url("../img/link-gradient.png");
     background-repeat: no-repeat;
     background-position: bottom;
   }
@@ -54,12 +54,10 @@
 
 @media (min-width: $tablet-width) {
   .site-list {
-    // width: $tablet-width;
     @include width(100%);
     position: static;
 
     display: flex;
-    // justify-content: flex-start;
     justify-content: space-between;
 
     transform: none;
@@ -68,7 +66,6 @@
   .site-list__item {
     &:nth-child(3) {
       margin-left: 155px;
-      // padding-left: 5px;
     }
   }
 

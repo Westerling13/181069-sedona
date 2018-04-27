@@ -1,0 +1,121 @@
+.field-checkbox {
+  @include width(100%);
+  margin: 0;
+  padding: 0 0 0;
+
+  font-family: $main-font-family;
+
+  border: none;
+}
+
+.field-checkbox__legend {
+  display: block;
+  width: 100%;
+  margin: 0 0 15px;
+  padding: 19px 0 0;
+
+  font-size: $font-size-title;
+  line-height: $line-height-title;
+  font-weight: $font-weight-bold;
+  text-align: center;
+  text-transform: uppercase;
+
+  border-top: 1px solid #e5e5e5;
+}
+
+.field-checkbox__wrapper {
+  padding: 0 21px 2px;
+}
+
+.field-checkbox__label {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  @include width(100%);
+  margin: 0 0 24px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: $font-weight-bold;
+}
+
+.field-checkbox__indicator {
+  position: relative;
+
+  display: block;
+  width: 56px;
+  height: 56px;
+  margin-right: 22px;
+
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.field-checkbox__input {
+  display: none;
+}
+
+.field-checkbox__input:checked + .field-checkbox__indicator {
+  background-image: url("../img/icon-tick.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .field-checkbox {
+    padding-bottom: 37px;
+
+    border-top: 1px solid #dbdbdb;
+  }
+
+  .field-checkbox__legend {
+    @include width(400px);
+    margin: 0 auto 41px;
+    padding: 0 0 0;
+
+    font-size: 21px;
+    line-height: 26px;
+
+    border: none;
+  }
+
+  .field-checkbox__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 0 0 61px;
+  }
+
+  .field-checkbox__label {
+    @include width(259px);
+    margin: 0 0 32px;
+  }
+
+  .field-checkbox__indicator {
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-checkbox {
+    padding-bottom: 68px;
+  }
+
+  .field-checkbox__wrapper {
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .field-checkbox__label {
+    width: auto;
+    margin: 0 69px 0 0;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}

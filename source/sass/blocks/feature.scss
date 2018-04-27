@@ -3,7 +3,6 @@
 
   display: flex;
   flex-wrap: wrap;
-  // @include width(320px);
   @include width(100%);
   padding: 26px 0 10px;
   font-family: $main-font-family;

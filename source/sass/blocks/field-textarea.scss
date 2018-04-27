@@ -1,4 +1,4 @@
-.textarea-field {
+.field-textarea {
   @include width(100%);
   margin: 0;
   padding: 0 0 0;
@@ -8,7 +8,7 @@
   border: none;
 }
 
-.textarea-field__legend {
+.field-textarea__legend {
   display: block;
   width: 100%;
   margin: 0 0 15px;
@@ -23,11 +23,11 @@
   border-top: 1px solid #e5e5e5;
 }
 
-.textarea-field__wrapper {
+.field-textarea__wrapper {
   padding: 0 20px 52px;
 }
 
-.textarea-field__input {
+.field-textarea__input {
   display: block;
 
   @include width(100%);
@@ -46,5 +46,28 @@
 
   &::placeholder {
     color: $main-color-second;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field-textarea {
+    padding-bottom: 59px;
+
+    border-top: 1px solid #dbdbdb;
+  }
+
+  .field-textarea__legend {
+    @include width(400px);
+    margin: 0 auto 56px;
+    padding: 0 0 0;
+
+    font-size: 21px;
+    line-height: 26px;
+
+    border: none;
+  }
+
+  .field-textarea__wrapper {
+    padding: 0;
   }
 }

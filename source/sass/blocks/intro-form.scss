@@ -29,8 +29,19 @@
 }
 
 @media (min-width: $tablet-width) {
-  .intro {
-    width: $tablet-width;
-    padding: 50px 80px 50px;
+  .intro-form {
+    @include width(100%);
+    padding: 69px 165px 50px;
+  }
+
+  .intro-form__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro-form {
+    padding: 106px 377px 35px;
   }
 }

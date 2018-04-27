@@ -1,8 +1,3 @@
-@mixin text($font-size, $line-height) {
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
 @mixin width($width) {
   box-sizing: border-box;
   width: $width;

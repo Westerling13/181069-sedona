@@ -51,105 +51,111 @@
           <h2 class="visually-hidden">Форма отправки отзыва</h2>
           <form class="review__form" action="https://echo.htmlacademy.ru" method="post">
 
-            <fieldset class="review__fieldset name-field">
-              <legend class="name-field__legend">
+            <fieldset class="review__fieldset field-name">
+              <legend class="field-name__legend">
                 Представьтесь:
               </legend>
-              <div class="name-field__wrapper">
-                <label class="name-field__label">
-                  <span class="name-field__label-text">Имя*:</span>
-                  <input class="name-field__input" type="text" name="first-name" placeholder="Петр">
+              <div class="field-name__wrapper">
+                <label class="field-name__label">
+                  <span class="field-name__label-text">Имя*:</span>
+                  <input class="field-name__input" type="text" name="first-name" placeholder="Петр">
                 </label>
-                <label class="name-field__label">
-                  <span class="name-field__label-text">Фамилия*:</span>
-                  <input class="name-field__input" type="text" name="second-name" placeholder="Иванов">
+                <label class="field-name__label">
+                  <span class="field-name__label-text">Фамилия*:</span>
+                  <input class="field-name__input" type="text" name="second-name" placeholder="Иванов">
                 </label>
-                <label class="name-field__label">
-                  <span class="name-field__label-text">Отчество:</span>
-                  <input class="name-field__input" type="text" name="patronymic" placeholder="Александрович">
+                <label class="field-name__label">
+                  <span class="field-name__label-text">Отчество:</span>
+                  <input class="field-name__input" type="text" name="patronymic" placeholder="Александрович">
                 </label>
               </div>
 
             </fieldset>
 
-            <fieldset class="review__fieldset contact-field">
-              <legend class="contact-field__legend">
+            <fieldset class="review__fieldset field-contact">
+              <legend class="field-contact__legend">
                 Контактная информация:
               </legend>
-              <div class="contact-field__wrapper">
-                <label class="contact-field__label contact-field__label--number">
-                  <span class="contact-field__label-text">Контактный телефон*:</span>
-                  <input class="contact-field__input" type="number" name="number" placeholder="Введите телефон">
+              <div class="field-contact__wrapper">
+                <label class="field-contact__label field-contact__label--number">
+                  <span class="field-contact__label-text">Контактный телефон*:</span>
+                  <input class="field-contact__input" type="number" name="number" placeholder="Введите телефон">
                 </label>
-                <label class="contact-field__label contact-field__label--email">
-                  <span class="contact-field__label-text">Электронная почта*:</span>
-                  <input class="contact-field__input" type="email" name="email" placeholder="Введите e-mail">
+                <label class="field-contact__label field-contact__label--email">
+                  <span class="field-contact__label-text">Электронная почта*:</span>
+                  <input class="field-contact__input" type="email" name="email" placeholder="Введите e-mail">
                 </label>
               </div>
             </fieldset>
 
-            <fieldset class="review__fieldset radio-field">
-              <legend class="radio-field__legend">
+            <fieldset class="review__fieldset field-radio">
+              <legend class="field-radio__legend">
                 Ваше общее впечатление:
               </legend>
-              <div class="radio-field__wrapper">
-                <label class="radio-field__label">
-                  <input class="radio-field__input" type="radio" name="radio" value="positive" checked>
-                  <span class="radio-field__indicator"></span>
-                  <span class="radio-field__label-text">Скорее положительное</span>
+              <div class="field-radio__wrapper">
+                <label class="field-radio__label">
+                  <input class="field-radio__input" type="radio" name="radio" value="positive" checked>
+                  <span class="field-radio__indicator"></span>
+                  <span class="field-radio__label-text">Скорее положительное</span>
                 </label>
-                <label class="radio-field__label">
-                  <input class="radio-field__input" type="radio" name="radio" value="negative">
-                  <span class="radio-field__indicator"></span>
-                  <span class="radio-field__label-text">Скорее отрицательное</span>
+                <label class="field-radio__label">
+                  <input class="field-radio__input" type="radio" name="radio" value="negative">
+                  <span class="field-radio__indicator"></span>
+                  <span class="field-radio__label-text">Скорее отрицательное</span>
                 </label>
-                <label class="radio-field__label">
-                  <input class="radio-field__input" type="radio" name="radio" value="zero">
-                  <span class="radio-field__indicator"></span>
-                  <span class="radio-field__label-text">Затрудняюсь ответить</span>
+                <label class="field-radio__label">
+                  <input class="field-radio__input" type="radio" name="radio" value="zero">
+                  <span class="field-radio__indicator"></span>
+                  <span class="field-radio__label-text">Затрудняюсь ответить</span>
                 </label>
               </div>
 
             </fieldset>
 
-            <fieldset class="review__fieldset checkbox-field">
-              <legend class="checkbox-field__legend">
+            <fieldset class="review__fieldset field-checkbox">
+              <legend class="field-checkbox__legend">
                 Посещенные достопримечательности:
               </legend>
-              <div class="checkbox-field__wrapper">
-                <label class="checkbox-field__label">
-                  <input class="checkbox-field__input" type="checkbox" name="checkbox-bridge" checked>
-                  <span class="checkbox-field__indicator"></span>
-                  <span class="checkbox-field__label-text">Мост Дьявола</span>
+              <div class="field-checkbox__wrapper">
+                <label class="field-checkbox__label">
+                  <input class="field-checkbox__input" type="checkbox" name="checkbox-bridge" checked>
+                  <span class="field-checkbox__indicator"></span>
+                  <span class="field-checkbox__label-text">Мост Дьявола</span>
                 </label>
-                <label class="checkbox-field__label">
-                  <input class="checkbox-field__input" type="checkbox" name="checkbox-mountain" checked>
-                  <span class="checkbox-field__indicator"></span>
-                  <span class="checkbox-field__label-text">Гора-Колокол</span>
+                <label class="field-checkbox__label">
+                  <input class="field-checkbox__input" type="checkbox" name="checkbox-mountain" checked>
+                  <span class="field-checkbox__indicator"></span>
+                  <span class="field-checkbox__label-text">Гора-Колокол</span>
                 </label>
-                <label class="checkbox-field__label">
-                  <input class="checkbox-field__input" type="checkbox" name="checkbox-park" checked>
-                  <span class="checkbox-field__indicator"></span>
-                  <span class="checkbox-field__label-text">Слайд-парк</span>
+                <label class="field-checkbox__label">
+                  <input class="field-checkbox__input" type="checkbox" name="checkbox-park" checked>
+                  <span class="field-checkbox__indicator"></span>
+                  <span class="field-checkbox__label-text">Слайд-парк</span>
                 </label>
-                <label class="checkbox-field__label">
-                  <input class="checkbox-field__input" type="checkbox" name="checkbox-cliffs">
-                  <span class="checkbox-field__indicator"></span>
-                  <span class="checkbox-field__label-text">Красные скалы</span>
+                <label class="field-checkbox__label">
+                  <input class="field-checkbox__input" type="checkbox" name="checkbox-cliffs">
+                  <span class="field-checkbox__indicator"></span>
+                  <span class="field-checkbox__label-text">Красные скалы</span>
                 </label>
               </div>
             </fieldset>
 
-            <fieldset class="review__fieldset textarea-field">
-              <legend class="textarea-field__legend">
+            <fieldset class="review__fieldset field-textarea">
+              <legend class="field-textarea__legend">
                 Опишите свои эмоции:
               </legend>
-              <div class="textarea-field__wrapper">
-                <textarea class="textarea-field__input" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+              <div class="field-textarea__wrapper">
+                <textarea class="field-textarea__input" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
               </div>
             </fieldset>
 
-            <button class="review__button button" type="submit">Отправить отзыв</button>
+            <div class="review__button-wrapper">
+              <button class="review__button button" type="submit">Отправить отзыв</button>
+              <p class="review__remark">
+                * — обязательные поля
+              </p>
+            </div>
+
 
           </form>
         </section>

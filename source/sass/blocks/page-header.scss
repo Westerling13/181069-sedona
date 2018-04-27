@@ -87,4 +87,16 @@
     height: 350px;
     margin: 77px auto 91px;
   }
+
+  .page-header__title {
+    width: 458px;
+    height: 78px;
+    margin: 94px auto 118px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__title {
+    margin: 102px auto 121px;;
+  }
 }

@@ -78,6 +78,7 @@
 
   .page-header__wrapper {
     position: static;
+
     @include width(100%);
     padding: 0;
   }
@@ -97,6 +98,6 @@
 
 @media (min-width: $desktop-width) {
   .page-header__title {
-    margin: 102px auto 121px;;
+    margin: 102px auto 121px;
   }
 }

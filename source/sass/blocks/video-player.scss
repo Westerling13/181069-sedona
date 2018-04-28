@@ -74,9 +74,7 @@
     width: 50.5%;
 
     transform: translateX(-60%);
-  }
 
-  .video-player__volume {
     &::before {
       display: none;
     }
@@ -85,6 +83,7 @@
       left: 30%;
     }
   }
+
 
   .video-player__controls {
     position: absolute;

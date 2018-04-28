@@ -158,7 +158,7 @@
       right: 80px;
     }
 
-    .field-contact__label-text{
+    .field-contact__label-text {
       font-size: 0;
       line-height: 0;
     }
@@ -174,9 +174,9 @@
     }
   }
 
-.field-contact__label-text {
-  margin: 0 16px 0 0;
-}
+  .field-contact__label-text {
+    margin: 0 16px 0 0;
+  }
 
   .field-contact__input {
     @include width(315px);

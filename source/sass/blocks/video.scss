@@ -26,3 +26,29 @@
   line-height: 24px;
   font-weight: $font-weight-regular;
 }
+
+@media (min-width: $tablet-width) {
+  .video {
+    padding: 61px 0 39px;
+  }
+
+  .video__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .video__description {
+    padding: 0 165px;
+    margin-bottom: 72px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    padding: 65px 0 85px;
+  }
+
+  .video__description {
+    padding: 0 385px;
+  }
+}

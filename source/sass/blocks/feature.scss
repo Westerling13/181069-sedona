@@ -13,7 +13,7 @@
 }
 
 .feature--special {
-  padding: 39px 0 0;
+  padding: 29px 0 0;
 
   background-color: $main-color-first;
 
@@ -30,6 +30,14 @@
     padding: 0 15px 0;
     color: $main-color-second;
   }
+}
+
+.feature--first-child {
+  padding: 77px 0 10px;
+
+  background-image: url("../img/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .feature__wrapper {

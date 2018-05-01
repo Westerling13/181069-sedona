@@ -2,27 +2,27 @@
   display: block;
   padding: 16px 0;
 
-  font-family: $main-font-family;
-  font-size: $font-size-button;
+  font-family: $font-family;
+  font-size: 21px;
   font-weight: $font-weight-bold;
-  line-height: $line-height-button;
+  line-height: 26px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  color: $extra-color-first;
+  color: $main-color-second;
 
   border: none;
-  background-color: $main-color-first;
+  background-color: $button-color;
 
   cursor: pointer;
 
   &:hover {
-    background-color: $main-color-first-hover;
+    background-color: $button-color-hover;
   }
 
   &:active {
-    color: rgba($extra-color-first, 0.3);
+    color: rgba($main-color-second, 0.3);
 
-    background-color: $main-color-first-active;
+    background-color: $button-color-active;
   }
 }

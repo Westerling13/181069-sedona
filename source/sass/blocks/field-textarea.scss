@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0 0 0;
 
-  font-family: $main-font-family;
+  font-family: $font-family;
 
   border: none;
 }
@@ -14,8 +14,8 @@
   margin: 0 0 15px;
   padding: 19px 0 0;
 
-  font-size: $font-size-title;
-  line-height: $line-height-title;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: $font-weight-bold;
   text-align: center;
   text-transform: uppercase;
@@ -34,18 +34,18 @@
   height: 160px;
   padding: 17px 21px;
 
-  font-family: $main-font-family;
-  font-size: $font-size-title;
-  line-height: $line-height-title;
+  font-family: $font-family;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: $font-weight-bold;
-  color: $main-color-second;
+  color: $extra-color-first;
 
   resize: none;
   border: none;
-  background-color: darken($extra-color-first, 5%);
+  background-color: $input-color;
 
   &::placeholder {
-    color: $main-color-second;
+    color: $extra-color-first;
   }
 }
 

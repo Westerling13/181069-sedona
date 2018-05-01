@@ -66,10 +66,6 @@
     position: relative;
 
     @include width(100%);
-
-    &--active {
-      margin-top: 0;
-    }
   }
 
   .page-header__logo {

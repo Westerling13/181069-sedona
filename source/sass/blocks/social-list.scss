@@ -21,16 +21,16 @@
 
   font-size: 0;
 
-  background-color: $main-color-first;
+  background-color: $button-color;
 
   cursor: pointer;
 
   &:hover {
-    background-color: $main-color-first-hover;
+    background-color: $button-color-hover;
   }
 
   &:active {
-    background-color: $main-color-first-active;
+    background-color: $button-color-active;
   }
 
   &--twitter {

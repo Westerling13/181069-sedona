@@ -4,26 +4,29 @@
   @include width(100%);
   padding: 37px 25px 27px;
 
-  font-family: $main-font-family;
+  font-family: $font-family;
   text-transform: uppercase;
   text-align: center;
+
+  background-color: $main-color-second;
 }
 
 .intro-photo__title {
   @include width(100%);
   margin: 0 0 27px;
   padding: 0;
+
   font-size: 18px;
   line-height: 26px;
   font-weight: $font-weight-bold;
-  color: $main-color-second;
+  color: $extra-color-first;
 }
 
 .intro-photo__description {
   @include width(100%);
   margin: 0;
   padding: 0;
-  font-size: $font-size-descrition;
+  font-size: 14px;
   line-height: 24px;
   font-weight: $font-weight-regular;
   color: $extra-color-second;

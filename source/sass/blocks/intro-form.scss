@@ -2,7 +2,7 @@
   @include width(100%);
   padding: 38px 10px 17px;
 
-  font-family: $main-font-family;
+  font-family: $font-family;
   text-transform: uppercase;
   text-align: center;
 }
@@ -12,17 +12,18 @@
   margin: 0 0 26px;
   padding: 0;
 
-  font-size: $font-size-title;
-  line-height: $line-height-title;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: $font-weight-bold;
-  color: $main-color-second;
+  color: $extra-color-first;
 }
 
 .intro-form__description {
   @include width(100%);
   margin: 0;
   padding: 0;
-  font-size: $font-size-descrition;
+
+  font-size: 14px;
   line-height: 24px;
   font-weight: $font-weight-regular;
   color: $extra-color-second;

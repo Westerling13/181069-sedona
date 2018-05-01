@@ -1,9 +1,10 @@
 .review {
-  @include width(100%);
   position: relative;
+
+  @include width(100%);
   padding: 0 0 37px;
 
-  font-family: $main-font-family;
+  font-family: $font-family;
 }
 
 .review__button {
@@ -38,11 +39,10 @@
   }
 
   .review__form {
+    @include width(100%);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    @include width(100%);
   }
 
   .review__button-wrapper {

@@ -2,15 +2,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: $main-font-family;
-  font-size: $font-size-descrition;
+  font-family: $font-family;
+  font-size: 14px;
   text-transform: uppercase;
+  color: $extra-color-first;
 }
 
 .copyright__text {
   margin: 0 13px 0 0;
+
+  line-height: 26px;
   font-weight: $font-weight-regular;
-  line-height: $line-height-title;
 }
 
 .copyright__link {

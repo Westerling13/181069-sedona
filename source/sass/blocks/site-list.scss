@@ -15,28 +15,28 @@
   @include width(100%);
   padding: 7px 0;
 
-  font-size: $font-size-title;
-  font-weight: $font-weight-bold;
+  font-size: 18px;
   line-height: 40px;
+  font-weight: $font-weight-bold;
   text-decoration: none;
   text-align: center;
-  color: $extra-color-first;
+  color: $main-color-second;
 
   border-top: 1px solid #9bc2db;
   border-bottom: 1px solid #678fa8;
-  background-color: $main-color-first;
+  background-color: $button-color;
   cursor: pointer;
 
   &:hover {
     border-top-color: #86b2cd;
 
-    background-color: $main-color-first-hover;
+    background-color: $button-color-hover;
   }
 
   &:active {
-    color: rgba($extra-color-first, 0.3);
+    color: rgba($main-color-second, 0.3);
 
-    background-color: $main-color-first-active;
+    background-color: $button-color-active;
   }
 
   &--first-child {
@@ -70,8 +70,8 @@
   }
 
   .site-list__link {
-    font-size: $font-size-title - 4;
-    color: $extra-color-second;
+    font-size: 14px;
+    color: $extra-color-first;
     background-color: transparent;
     background-image: none;
     border: none;
@@ -83,19 +83,19 @@
     }
 
     &:active {
-      color: rgba($main-color-second, 0.3);
+      color: rgba($extra-color-first, 0.3);
     }
 
     &--active {
-      color: $menu-active-color;
+      color: #766357;
     }
 
     &--active:hover {
-      color: $menu-active-hover-color;
+      color: #604e43;
     }
 
     &--active:active {
-      color: rgba($menu-active-hover-color, 0.3);
+      color: rgba(#604e43, 0.3);
     }
   }
 }

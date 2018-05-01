@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0 0 0;
 
-  font-family: $main-font-family;
+  font-family: $font-family;
   text-transform: uppercase;
 
   border: none;
@@ -15,8 +15,8 @@
   margin: 0 0 19px;
   padding: 19px 0 0;
 
-  font-size: $font-size-title;
-  line-height: $line-height-title;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: $font-weight-bold;
   text-align: center;
 
@@ -38,8 +38,8 @@
   @include width(100%);
   margin: 0 0 12px;
 
-  font-size: $font-size-descrition;
-  line-height: $line-height-title;
+  font-size: 14px;
+  line-height: 26px;
   font-weight: $font-weight-regular;
 
   &::before {
@@ -80,17 +80,17 @@
   height: 58px;
   padding: 0 58px 0 21px;
 
-  font-family: $main-font-family;
-  font-size: $font-size-title;
-  line-height: $line-height-title;
+  font-family: $font-family;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: $font-weight-bold;
-  color: $main-color-second;
+  color: $extra-color-first;
 
   border: none;
-  background-color: darken($extra-color-first, 5%);
+  background-color: $input-color;
 
   &::placeholder {
-    color: $main-color-second;
+    color: $extra-color-first;
   }
 }
 

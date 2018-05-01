@@ -1,11 +1,19 @@
 .review {
   position: relative;
+
+  @include width(100%);
   padding: 0 0 37px;
+
+  font-family: $font-family;
 }
 
 .review__button {
   @include width(87.5%);
   margin: auto;
+}
+
+.review__form {
+  @include width(100%);
 }
 
 .review__modal {
@@ -18,5 +26,57 @@
 
   &--negative {
     top: 1543px;
+  }
+}
+
+.review__remark {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .review {
+    padding: 0 7.8% 60px;
+  }
+
+  .review__form {
+    @include width(100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .review__button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .review__button {
+    width: 50%;
+    margin: 0;
+    padding-left: 66px;
+
+    text-align: left;
+  }
+
+  .review__remark {
+    display: block;
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    padding: 0 10% 66px;
+  }
+
+  .review__button {
+    padding-left: 0;
+    text-align: center;
   }
 }

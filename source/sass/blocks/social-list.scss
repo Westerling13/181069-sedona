@@ -21,32 +21,32 @@
 
   font-size: 0;
 
-  background-color: $main-color-first;
+  background-color: $button-color;
 
   cursor: pointer;
 
   &:hover {
-    background-color: $main-color-first-hover;
+    background-color: $button-color-hover;
   }
 
   &:active {
-    background-color: $main-color-first-active;
+    background-color: $button-color-active;
   }
 
   &--twitter {
-    background-image: url("../../img/icon-twitter.svg");
+    background-image: url("../img/icon-twitter.svg");
     background-repeat: no-repeat;
     background-position: 50%;
   }
 
   &--facebook {
-    background-image: url("../../img/icon-facebook.svg");
+    background-image: url("../img/icon-facebook.svg");
     background-repeat: no-repeat;
     background-position: 50%;
   }
 
   &--youtube {
-    background-image: url("../../img/icon-youtube.svg");
+    background-image: url("../img/icon-youtube.svg");
     background-repeat: no-repeat;
     background-position: 50%;
   }

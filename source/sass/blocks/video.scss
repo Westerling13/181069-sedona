@@ -2,7 +2,7 @@
   @include width(100%);
   padding: 34px 0 39px;
 
-  font-family: $main-font-family;
+  font-family: $font-family;
   text-transform: uppercase;
   text-align: center;
 }
@@ -12,8 +12,8 @@
   margin: 0 0 26px;
   padding: 0;
 
-  font-size: $font-size-title;
-  line-height: $line-height-title;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: $font-weight-bold;
 }
 
@@ -22,7 +22,33 @@
   margin: 0 0 35px;
   padding: 0 25px;
 
-  font-size: $font-size-descrition;
+  font-size: 14px;
   line-height: 24px;
   font-weight: $font-weight-regular;
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    padding: 61px 0 39px;
+  }
+
+  .video__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .video__description {
+    padding: 0 165px;
+    margin-bottom: 72px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    padding: 65px 0 85px;
+  }
+
+  .video__description {
+    padding: 0 385px;
+  }
 }

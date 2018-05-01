@@ -2,16 +2,16 @@
   @include width(100%);
   padding: 36px 0 15px;
 
-  font-family: $main-font-family;
+  font-family: $font-family;
   text-transform: uppercase;
   text-align: center;
 }
 
 .page-footer__title {
   margin: 0 0 36px;
-  font-size: $font-size-title-big;
+  font-size: 21px;
+  line-height: 26px;
   font-weight: $font-weight-bold;
-  line-height: $line-height-title;
 }
 
 .page-footer__list {
@@ -36,7 +36,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .page-footer {
     padding: 35px 120px 37px;
   }

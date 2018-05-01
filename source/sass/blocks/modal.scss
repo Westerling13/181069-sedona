@@ -4,12 +4,12 @@
   @include width(320px);
   padding: 40px 0 0;
 
-  font-family: $main-font-family;
+  font-family: $font-family;
   text-transform: uppercase;
   text-align: center;
 
-  background-color: $extra-color-first;
-  box-shadow: 0 7px 25px rgba($main-color-second, 0.15);
+  background-color: $main-color-second;
+  box-shadow: 0 7px 25px rgba($extra-color-first, 0.15);
 
   &--active {
     display: block;
@@ -35,7 +35,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: $font-weight-bold;
-  color: $main-color-second;
+  color: $extra-color-first;
 }
 
 .modal__text {
@@ -43,7 +43,7 @@
   margin: 0 0 34px;
   padding: 0 42px;
 
-  font-size: $font-size-descrition;
+  font-size: 14px;
   line-height: 24px;
   font-weight: $font-weight-regular;
   color: $extra-color-second;

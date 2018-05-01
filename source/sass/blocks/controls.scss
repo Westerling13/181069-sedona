@@ -5,7 +5,7 @@
   @include width(87.5%);
   padding: 22px 23px 24px;
 
-  background-color: darken($extra-color-first, 5%);
+  background-color: #f2f2f2;
 }
 
 .controls__button {
@@ -34,4 +34,37 @@
 
 .controls__button-icon {
   fill: #5c6870;
+}
+
+@media (min-width: $tablet-width) {
+  .controls {
+    width: 84.4%;
+    padding: 35px 35px 38px;
+
+    background-color: rgba($extra-color-first, 0.6);
+  }
+
+  .controls__button-wrapper {
+    margin-right: 6px;
+  }
+
+  .controls__button {
+    &:hover .controls__button-icon {
+      fill: rgba($main-color-second, 0.6);
+    }
+
+    &:active .controls__button-icon {
+      fill: rgba($main-color-second, 0.3);
+    }
+  }
+
+  .controls__button-icon {
+    fill: $main-color-second;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .controls {
+    width: 66.67%;
+  }
 }

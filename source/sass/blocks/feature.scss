@@ -3,17 +3,32 @@
 
   display: flex;
   flex-wrap: wrap;
-  // @include width(320px);
+
   @include width(100%);
   padding: 26px 0 10px;
-  font-family: $main-font-family;
+  font-family: $font-family;
   text-transform: uppercase;
   text-align: center;
-  background-color: darken($extra-color-first, 6.5%);
+  background-color: #eeeeee;
+}
 
-  &--special {
-    padding: 39px 0 0;
-    background-color: $main-color-first;
+.feature--special {
+  padding: 39px 0 0;
+
+  background-color: $main-color-first;
+
+  .feature__title {
+    color: $main-color-second;
+  }
+
+  .feature__number {
+    color: $main-color-second;
+  }
+
+  .feature__description {
+    margin: 0 0 40px;
+    padding: 0 15px 0;
+    color: $main-color-second;
   }
 }
 
@@ -25,14 +40,10 @@
   @include width(100%);
   margin: 0 0 10px;
 
-  font-size: $font-size-title;
-  line-height: $line-height-title;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: $font-weight-bold;
-  color: $main-color-second;
-
-  &--special {
-    color: $extra-color-first;
-  }
+  color: $extra-color-first;
 }
 
 .feature__number {
@@ -41,14 +52,10 @@
   @include width(100%);
   margin-bottom: 14px;
 
-  font-size: $font-size-descrition;
-  line-height: $line-height-description;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: $font-weight-regular;
   color: $extra-color-second;
-
-  &--special {
-    color: $extra-color-first;
-  }
 }
 
 .feature__description {
@@ -56,16 +63,10 @@
   margin: 0 0 19px;
   padding: 0 35px 0;
 
-  font-size: $font-size-descrition;
-  line-height: $line-height-description;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: $font-weight-regular;
   color: $extra-color-second;
-
-  &--special {
-    margin: 0 0 40px;
-    padding: 0 15px 0;
-    color: $extra-color-first;
-  }
 }
 
 .feature__image-wrapper {
@@ -87,11 +88,15 @@
 
     @include width(33.3%);
     padding: 0;
+  }
 
-    &--special {
-      padding: 0;
+  .feature--special {
+    @include width(100%);
+    padding: 0;
 
-      @include width(100%);
+    .feature__wrapper {
+      @include width(33.3%);
+      padding: 45px 45px 10px;
     }
   }
 
@@ -100,18 +105,13 @@
     height: 255px;
     padding: 47px 48px 10px;
 
-    &--special {
-      @include width(33.3%);
-      padding: 45px 45px 10px;
-    }
-
     &--reverse {
       order: 1;
     }
   }
 
   .feature__title {
-    font-size: $font-size-title-big;
+    font-size: 21px;
     margin: 0 0 10px;
   }
 
@@ -136,21 +136,17 @@
 }
 
 @media (min-width: $desktop-width) {
-  .feature__wrapper {
-    padding: 46px 55px 0;
-
-    &--special {
+  .feature--special {
+    .feature__wrapper {
       padding: 52px 55px 0;
+    }
+
+    .feature__description {
+      padding: 0 35px;
     }
   }
 
   .feature__title {
     padding: 0 65px;
-  }
-
-  .feature__description {
-    &--special {
-      padding: 0 35px;
-    }
   }
 }

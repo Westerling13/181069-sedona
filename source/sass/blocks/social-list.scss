@@ -15,7 +15,9 @@
 }
 
 .social-list__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 46px;
   height: 48px;
 
@@ -33,21 +35,11 @@
     background-color: $button-color-active;
   }
 
-  &--twitter {
-    background-image: url("../img/icon-twitter.svg");
-    background-repeat: no-repeat;
-    background-position: 50%;
+  &:active .social-list__icon {
+    opacity: 0.3;
   }
+}
 
-  &--facebook {
-    background-image: url("../img/icon-facebook.svg");
-    background-repeat: no-repeat;
-    background-position: 50%;
-  }
-
-  &--youtube {
-    background-image: url("../img/icon-youtube.svg");
-    background-repeat: no-repeat;
-    background-position: 50%;
-  }
+.social-list__icon {
+  fill: $main-color-second;
 }

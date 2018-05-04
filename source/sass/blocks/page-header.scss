@@ -17,6 +17,10 @@
   transform: translateX(-50%);
 }
 
+.page-header__logo-image {
+  width: 100%;
+}
+
 .page-header__wrapper {
   position: relative;
 
@@ -31,8 +35,14 @@
     bottom,
     bottom;
   background-size:
-    104%,
-    auto;
+    100%,
+    cover;
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background-image:
+      url("../img/bg-intro-triangle-mobile.svg"),
+      url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .page-header__title-index {
@@ -77,6 +87,16 @@
 
     @include width(100%);
     padding: 0;
+
+    background-image:
+      url("../img/bg-intro-triangle-tablet.svg"),
+      url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+      background-image:
+        url("../img/bg-intro-triangle-tablet.svg"),
+        url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .page-header__title-index {
@@ -95,5 +115,17 @@
 @media (min-width: $desktop-width) {
   .page-header__title {
     margin: 102px auto 121px;
+  }
+
+  .page-header__wrapper {
+    background-image:
+      url("../img/bg-intro-triangle-desktop.svg"),
+      url("../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+      background-image:
+        url("../img/bg-intro-triangle-desktop.svg"),
+        url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 }

@@ -47,19 +47,38 @@
   position: relative;
 
   display: block;
+  box-sizing: border-box;
   width: 56px;
   height: 56px;
   margin-right: 22px;
 
   border-radius: 50%;
   background-color: $input-color;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $input-color-hover;
+  }
+
+  &:active {
+    background-color: $input-color-active;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 .field-radio__input {
-  display: none;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
 
-.field-radio__input:checked + .field-radio__indicator::before {
+.field-radio__input:checked + .field-radio__indicator::before,
+.field-radio__input:active + .field-radio__indicator::before {
   content: "";
 
   position: absolute;
@@ -74,6 +93,11 @@
   background-color: $extra-color-second;
 
   transform: translate(-50%, -50%);
+}
+
+.field-radio__input:focus + .field-radio__indicator {
+  background-color: $input-color-hover;
+  border: 4px solid $input-color-active;
 }
 
 @media (min-width: $tablet-width) {

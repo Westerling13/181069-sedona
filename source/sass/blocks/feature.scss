@@ -79,6 +79,8 @@
 
 .feature__image-wrapper {
   @include width(100%);
+  display: flex;
+  align-items: center;
   margin: 0;
 
   overflow: hidden;
@@ -147,21 +149,12 @@
     @include width(66.7%);
     height: 255px;
   }
-
-  .feature__image {
-    @include width(100%);
-    overflow: hidden;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .feature--special {
     .feature__wrapper {
       padding: 52px 55px 0;
-    }
-
-    .feature__description {
-      padding: 0 35px;
     }
   }
 

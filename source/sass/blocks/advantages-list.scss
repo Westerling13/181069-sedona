@@ -122,3 +122,9 @@
     font-size: 21px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .advantages-list__text {
+    display: block;
+  }
+}

@@ -29,7 +29,7 @@
           </ul>
         </nav>
         <div class="page-header__wrapper">
-          <a class="page-header__logo">
+          <a class="page-header__logo" href="index.html">
             <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
           </a>
           <h1 class="page-header__title">
@@ -58,11 +58,11 @@
               <div class="field-name__wrapper">
                 <label class="field-name__label">
                   <span class="field-name__label-text">Имя*:</span>
-                  <input class="field-name__input" type="text" name="first-name" placeholder="Петр">
+                  <input class="field-name__input" type="text" name="first-name" placeholder="Петр" required>
                 </label>
                 <label class="field-name__label">
                   <span class="field-name__label-text">Фамилия*:</span>
-                  <input class="field-name__input" type="text" name="second-name" placeholder="Иванов">
+                  <input class="field-name__input" type="text" name="second-name" placeholder="Иванов" required>
                 </label>
                 <label class="field-name__label">
                   <span class="field-name__label-text">Отчество:</span>
@@ -79,11 +79,11 @@
               <div class="field-contact__wrapper">
                 <label class="field-contact__label field-contact__label--number">
                   <span class="field-contact__label-text">Контактный телефон*:</span>
-                  <input class="field-contact__input" type="number" name="number" placeholder="Введите телефон">
+                  <input class="field-contact__input" type="tel" name="tel" placeholder="Введите телефон" pattern="(\+?\d[- .]*){7,13}" required>
                 </label>
                 <label class="field-contact__label field-contact__label--email">
                   <span class="field-contact__label-text">Электронная почта*:</span>
-                  <input class="field-contact__input" type="email" name="email" placeholder="Введите e-mail">
+                  <input class="field-contact__input" type="email" name="email" placeholder="Введите e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
                 </label>
               </div>
             </fieldset>

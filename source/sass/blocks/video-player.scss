@@ -4,6 +4,7 @@
 
 .video-player__preview {
   display: block;
+  width: 100%;
   margin: auto;
 }
 
@@ -94,6 +95,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .video-player {
+    padding: 0 16.67% 0;
+  }
+
   .video-player__volume {
     width: 45%;
 

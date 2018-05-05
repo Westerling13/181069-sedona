@@ -102,7 +102,7 @@
     background-image: none;
 
     &:nth-child(5) .feature__wrapper {
-      padding: 47px 55px 10px;
+      padding: 47px 60px 10px;
     }
   }
 
@@ -154,11 +154,25 @@
 @media (min-width: $desktop-width) {
   .feature--special {
     .feature__wrapper {
+      padding: 52px 30px 0;
+    }
+
+    .feature__description {
+      padding: 0 55px 0;
+    }
+  }
+
+  .feature--first-child {
+    .feature__wrapper {
       padding: 52px 55px 0;
+    }
+
+    .feature__description {
+      padding: 0;
     }
   }
 
   .feature__title {
-    padding: 0 65px;
+    padding: 0 72px;
   }
 }

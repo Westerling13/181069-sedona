@@ -1,10 +1,12 @@
 .video {
   @include width(100%);
-  padding: 34px 0 39px;
+  padding: 33px 0 39px;
 
   font-family: $font-family;
   text-transform: uppercase;
   text-align: center;
+
+  border-top: 1px solid #e5e5e5;
 }
 
 .video__title {

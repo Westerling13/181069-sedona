@@ -68,6 +68,10 @@
     line-height: 26px;
     text-transform: uppercase;
   }
+
+  .review__modal {
+    top: 80%;
+  }
 }
 
 @media (min-width: $desktop-width) {

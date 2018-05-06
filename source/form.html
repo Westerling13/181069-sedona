@@ -68,7 +68,7 @@
 
         <section class="review">
           <h2 class="visually-hidden">Форма отправки отзыва</h2>
-          <form class="review__form" method="post">
+          <form class="review__form" action="https://echo.htmlacademy.ru" method="post">
 
             <fieldset class="review__fieldset field-name">
               <legend class="field-name__legend">
@@ -77,11 +77,11 @@
               <div class="field-name__wrapper">
                 <label class="field-name__label">
                   <span class="field-name__label-text">Имя*:</span>
-                  <input class="field-name__input" type="text" name="first-name" placeholder="Петр" required>
+                  <input class="field-name__input" type="text" name="first-name" placeholder="Петр">
                 </label>
                 <label class="field-name__label">
                   <span class="field-name__label-text">Фамилия*:</span>
-                  <input class="field-name__input" type="text" name="second-name" placeholder="Иванов" required>
+                  <input class="field-name__input" type="text" name="second-name" placeholder="Иванов">
                 </label>
                 <label class="field-name__label">
                   <span class="field-name__label-text">Отчество:</span>
@@ -98,11 +98,11 @@
               <div class="field-contact__wrapper">
                 <label class="field-contact__label field-contact__label--number">
                   <span class="field-contact__label-text">Контактный телефон*:</span>
-                  <input class="field-contact__input" type="tel" name="tel" placeholder="Введите телефон" pattern="(\+?\d[- .]*){7,13}" required>
+                  <input class="field-contact__input" type="tel" name="tel" placeholder="Введите телефон" pattern="(\+?\d[- .]*){7,13}">
                 </label>
                 <label class="field-contact__label field-contact__label--email">
                   <span class="field-contact__label-text">Электронная почта*:</span>
-                  <input class="field-contact__input" type="email" name="email" placeholder="Введите e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                  <input class="field-contact__input" type="email" name="email" placeholder="Введите e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
                 </label>
               </div>
             </fieldset>
@@ -177,25 +177,25 @@
 
 
           </form>
-        </section>
 
-        <section class="review__modal review__modal--negative modal modal--negative" id="modal-negative">
-          <h2 class="modal__title">Что-то пошло не так!</h2>
-          <p class="modal__text">
-            Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-          </p>
-          <button class="modal__button button">Ок</button>
-        </section>
+          <section class="review__modal review__modal--negative modal modal--negative" id="modal-negative">
+            <h2 class="modal__title">Что-то пошло не так!</h2>
+            <p class="modal__text">
+              Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+            </p>
+            <button class="modal__button button" id="modal-button-negative" type="button">Ок</button>
+          </section>
 
-        <section class="review__modal review__modal modal" id="modal-positive">
-          <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-          <p class="modal__text">
-            Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>
-            В ближайшее время мы опубликуем его на сайте.
-          </p>
-          <div class="modal__button-wrapper">
-            <button class="modal__button button" id="modal-button" type="button">Закрыть окно</button>
-          </div>
+          <section class="review__modal review__modal modal" id="modal-positive">
+            <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+            <p class="modal__text">
+              Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>
+              В ближайшее время мы опубликуем его на сайте.
+            </p>
+            <div class="modal__button-wrapper">
+              <button class="modal__button button" id="modal-button-positive" type="button">Закрыть окно</button>
+            </div>
+          </section>
         </section>
 
       </main>

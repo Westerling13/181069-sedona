@@ -18,14 +18,14 @@
 
 .review__modal {
   position: absolute;
-  top: 1873px;
+  top: 1233px;
   left: 50%;
   z-index: 100;
 
   transform: translateX(-50%);
 
   &--negative {
-    top: 1543px;
+    top: 903px;
   }
 }
 
@@ -70,7 +70,11 @@
   }
 
   .review__modal {
-    top: 80%;
+    top: 692px;
+
+    &--negative {
+      top: 847px;
+    }
   }
 }
 
@@ -82,5 +86,13 @@
   .review__button {
     padding-left: 0;
     text-align: center;
+  }
+
+  .review__modal {
+    top: 509px;
+
+    &--negative {
+      top: 775px;
+    }
   }
 }

@@ -3,7 +3,8 @@ var navMain = document.querySelector('.main-nav');
 var header = document.querySelector('.page-header');
 var modalPositive = document.getElementById('modal-positive');
 var modalNegative = document.getElementById('modal-negative');
-var modalButton = document.getElementById('modal-button');
+var modalButtonPositive = document.getElementById('modal-button-positive');
+var modalButtonNegative = document.getElementById('modal-button-negative');
 var formReview = document.querySelector('.review__form');
 var formButton = document.querySelector('.review__button');
 var formNameFirst = document.querySelector('[name=first-name]');
@@ -19,9 +20,15 @@ navToggle.addEventListener('click', function (evt) {
   navMain.classList.toggle('main-nav--opened');
 });
 
-if (modalPositive || modalNegative) {
-  modalButton.addEventListener('click', function (evt) {
+if (modalPositive) {
+  modalButtonPositive.addEventListener('click', function (evt) {
     modalPositive.classList.remove('modal--active');
+  });
+};
+
+if (modalNegative) {
+  modalButtonNegative.addEventListener('click', function (evt) {
+    modalNegative.classList.remove('modal--active');
   });
 };
 
@@ -31,7 +38,6 @@ if (formReview) {
       evt.preventDefault();
       modalNegative.classList.add('modal--active');
     } else {
-      evt.preventDefault();
       modalPositive.classList.add('modal--active');
     };
   });

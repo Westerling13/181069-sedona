@@ -102,8 +102,24 @@
 
 @media (min-width: $tablet-width) {
   .field-radio {
+    position: relative;
+
     width: 50%;
     order: -1;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      right: 0;
+      top: 27px;
+
+      display: block;
+      width: 1px;
+      height: 292px;
+
+      background-color: #dbdbdb;
+    }
   }
 
   .field-radio__legend {

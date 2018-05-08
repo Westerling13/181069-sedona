@@ -10,6 +10,23 @@
   text-transform: uppercase;
   text-align: center;
   background-color: #eeeeee;
+
+  &:nth-child(4)::after,
+  &:nth-child(5)::after {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    bottom: 1px;
+
+    display: block;
+    width: 280px;
+    height: 1px;
+
+    background-color: #d6d6d6;
+
+    transform: translateX(-50%);
+  }
 }
 
 .feature--special {
@@ -103,6 +120,11 @@
 
     &:nth-child(5) .feature__wrapper {
       padding: 47px 60px 10px;
+    }
+
+    &:nth-child(4)::after,
+    &:nth-child(5)::after {
+      display: none;
     }
   }
 

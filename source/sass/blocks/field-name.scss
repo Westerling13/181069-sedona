@@ -66,6 +66,22 @@
   &::placeholder {
     color: $extra-color-first;
   }
+
+  &:hover {
+    background-color: $input-color-hover;
+  }
+
+  &:focus {
+    padding-left: 17px;
+
+    background-color: $main-color-second;
+    border: 4px solid $input-color-active;
+    outline: none;
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
 }
 
 @media (min-width: $tablet-width) {

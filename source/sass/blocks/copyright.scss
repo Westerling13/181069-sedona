@@ -19,3 +19,15 @@
   display: block;
   margin-top: 3px;
 }
+
+.copyright__icon {
+  fill: $extra-color-first;
+
+  &:hover {
+    fill: $main-color-first;
+  }
+
+  &:active {
+    fill: rgba($extra-color-first, 0.3);
+  }
+}

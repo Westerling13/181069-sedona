@@ -9,7 +9,7 @@
 .hotel-search__title {
   margin: 0 0 19px;
   font-size: 21px;
-  line-height:26px;
+  line-height: 26px;
   font-weight: $font-weight-bold;
 }
 
@@ -40,6 +40,10 @@
     margin-bottom: 42px;
   }
 
+  .hotel-search__text {
+    display: block;
+  }
+
   .hotel-search__link {
     width: 458px;
   }
@@ -51,7 +55,6 @@
   }
 
   .hotel-search__description {
-    padding: 0 401px;
     margin-bottom: 47px;
   }
 }

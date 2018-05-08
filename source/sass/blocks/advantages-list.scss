@@ -80,7 +80,7 @@
   .advantages-list__item {
     @include width(33.3%);
     height: 331px;
-    padding: 160px 48px 0;
+    padding: 160px 50px 0;
 
     text-align: center;
 
@@ -120,5 +120,11 @@
   .advantages-list__title {
     margin-bottom: 21px;
     font-size: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages-list__text {
+    display: block;
   }
 }

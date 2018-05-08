@@ -18,14 +18,14 @@
 
 .review__modal {
   position: absolute;
-  top: 1873px;
+  top: 1233px;
   left: 50%;
   z-index: 100;
 
   transform: translateX(-50%);
 
-  &--negative {
-    top: 1543px;
+  &--failure {
+    top: 903px;
   }
 }
 
@@ -68,6 +68,14 @@
     line-height: 26px;
     text-transform: uppercase;
   }
+
+  .review__modal {
+    top: 692px;
+
+    &--failure {
+      top: 847px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -78,5 +86,13 @@
   .review__button {
     padding-left: 0;
     text-align: center;
+  }
+
+  .review__modal {
+    top: 509px;
+
+    &--failure {
+      top: 775px;
+    }
   }
 }

@@ -124,7 +124,7 @@
     @include width(400px);
     margin: 0 auto 0;
 
-    @-moz-document url-prefix() {
+    @-moz-document url-prefix("") {
       margin-left: 124px;
     }
 
@@ -162,7 +162,7 @@
   .field-contact__legend {
     margin-bottom: 0;
 
-    @-moz-document url-prefix() {
+    @-moz-document url-prefix("") {
       margin-left: 280px;
     }
   }

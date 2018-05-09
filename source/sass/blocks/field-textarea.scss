@@ -78,7 +78,7 @@
     @include width(400px);
     margin: 0 auto 0;
 
-    @-moz-document url-prefix() {
+    @-moz-document url-prefix("") {
       margin-left: 124px;
     }
 
@@ -97,7 +97,7 @@
 
 @media (min-width: $desktop-width) {
   .field-textarea__legend {
-    @-moz-document url-prefix() {
+    @-moz-document url-prefix("") {
       margin-left: 280px;
     }
   }

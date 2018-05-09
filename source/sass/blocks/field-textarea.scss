@@ -46,6 +46,7 @@
 
   &::placeholder {
     color: $extra-color-first;
+    opacity: 1;
   }
 
   &:hover {
@@ -75,7 +76,7 @@
 
   .field-textarea__legend {
     @include width(400px);
-    margin: 0 auto 56px;
+    margin: 0 auto 0;
     padding: 0 0 0;
 
     font-size: 21px;
@@ -85,6 +86,6 @@
   }
 
   .field-textarea__wrapper {
-    padding: 0;
+    padding: 56px 0 0;
   }
 }

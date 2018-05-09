@@ -123,6 +123,11 @@
   .field-contact__legend {
     @include width(400px);
     margin: 0 auto 0;
+
+    @-moz-document url-prefix() {
+      margin-left: 124px;
+    }
+
     padding: 0 0 0;
 
     font-size: 21px;
@@ -156,6 +161,10 @@
 
   .field-contact__legend {
     margin-bottom: 0;
+
+    @-moz-document url-prefix() {
+      margin-left: 280px;
+    }
   }
 
   .field-contact__wrapper {

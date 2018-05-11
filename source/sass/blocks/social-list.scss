@@ -29,7 +29,8 @@
 
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $button-color-hover;
   }
 

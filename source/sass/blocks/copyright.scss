@@ -18,16 +18,21 @@
 .copyright__link {
   display: block;
   margin-top: 3px;
+
+  .copyright__icon {
+    fill: $extra-color-first;
+  }
 }
 
-.copyright__icon {
-  fill: $extra-color-first;
-
-  &:hover {
+.copyright__link:hover,
+.copyright__link:focus {
+  .copyright__icon {
     fill: $main-color-first;
   }
+}
 
-  &:active {
+.copyright__link:active {
+  .copyright__icon {
     fill: rgba($extra-color-first, 0.3);
   }
 }

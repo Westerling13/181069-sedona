@@ -36,9 +36,9 @@ if (formReview) {
   formReview.addEventListener('submit', function (evt) {
     if (!formNameFirst.value || !formNameSecond.value || !formTel.value || !formEmail.value) {
       evt.preventDefault();
-      // formNameFirst.style.backgroundColor = "#fd4646";
       modalFailure.classList.add('modal--active');
     } else {
+      evt.preventDefault();
       modalSuccess.classList.add('modal--active');
     };
   });

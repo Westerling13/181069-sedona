@@ -156,7 +156,7 @@
 
 @media (min-width: $desktop-width) {
   .field-contact {
-    padding-bottom: 53px;
+    padding-bottom: 29px;
   }
 
   .field-contact__legend {
@@ -178,20 +178,16 @@
   .field-contact__label {
     @include width(50%);
     flex-wrap: nowrap;
-    margin: 0;
+
+    &:nth-child(2n-1) {
+      width: 41.5%;
+      margin-right: 80px;
+    }
   }
 
   .field-contact__label--number {
-    padding-right: 80px;
-
-    &::before {
-      right: 80px;
-    }
-
-    .field-contact__label-text {
-      font-size: 0;
-      line-height: 0;
-    }
+    font-size: 0;
+    line-height: 0;
 
     .field-contact__label-text::before {
       content: "Телефон*:";
@@ -206,9 +202,6 @@
 
   .field-contact__label-text {
     margin: 0 16px 0 0;
-  }
-
-  .field-contact__input {
-    @include width(315px);
+    flex-shrink: 0;
   }
 }

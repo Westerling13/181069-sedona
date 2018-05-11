@@ -67,6 +67,7 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: $font-weight-regular;
+  overflow: hidden;
 }
 
 @media (min-width: $tablet-width) {
@@ -79,8 +80,8 @@
 
   .advantages-list__item {
     @include width(33.3%);
-    height: 331px;
-    padding: 160px 50px 0;
+    min-height: 331px;
+    padding: 160px 50px 25px;
 
     text-align: center;
 

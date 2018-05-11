@@ -1,5 +1,7 @@
 .social-list {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 690px;
   justify-content: center;
   padding: 0;
 

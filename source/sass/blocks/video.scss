@@ -32,6 +32,8 @@
 @media (min-width: $tablet-width) {
   .video {
     padding: 61px 0 39px;
+
+    border-top: none;
   }
 
   .video__title {

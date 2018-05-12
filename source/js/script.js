@@ -11,6 +11,8 @@ var formNameFirst = document.querySelector('[name=first-name]');
 var formNameSecond = document.querySelector('[name=second-name]');
 var formTel = document.querySelector('[name=tel]');
 var formEmail = document.querySelector('[name=email]');
+var map;
+var marker;
 
 
 navMain.classList.remove('main-nav--no-js');
@@ -42,4 +44,19 @@ if (formReview) {
       modalSuccess.classList.add('modal--active');
     };
   });
+};
+
+function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 34.894615, lng: -111.789784},
+            zoom: 7,
+            scrollwheel: false,
+            disableDefaultUI: false
+        });
+
+        marker = new google.maps.Marker({
+            position: {lat: 34.774615, lng: -111.789784},
+            map: map,
+            icon: "../img/icon-map-marker.svg"
+        });
 };

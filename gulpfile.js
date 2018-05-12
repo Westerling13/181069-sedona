@@ -96,6 +96,6 @@ gulp.task("build", function(done) {
     "copy",
     "style",
     "minify",
-     done
-   );
+    done
+  );
 });

@@ -1,5 +1,5 @@
 .intro-form {
-  @include width(100%);
+  width: 100%;
   padding: 38px 10px 17px;
 
   font-family: $font-family;
@@ -8,7 +8,7 @@
 }
 
 .intro-form__title {
-  @include width(100%);
+  width: 100%;
   margin: 0 0 26px;
   padding: 0;
 
@@ -19,7 +19,7 @@
 }
 
 .intro-form__description {
-  @include width(100%);
+  width: 100%;
   margin: 0;
   padding: 0;
 
@@ -31,7 +31,7 @@
 
 @media (min-width: $tablet-width) {
   .intro-form {
-    @include width(100%);
+    width: 100%;
     padding: 69px 165px 50px;
   }
 

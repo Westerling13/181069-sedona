@@ -1,7 +1,7 @@
 .main-nav {
   position: relative;
 
-  @include width(100%);
+  width: 100%;
   margin-bottom: 56px;
 
   font-family: $font-family;
@@ -70,7 +70,7 @@
   .main-nav {
     display: flex;
     flex-wrap: wrap;
-    @include width(100%);
+    width: 100%;
     min-height: 56px;
     margin: 0;
   }

@@ -1,13 +1,16 @@
 .advantages-list {
-  list-style: none;
   margin: 0;
   padding: 25px 0 19px;
-  background-color: $main-color-second;
+
   text-align: left;
+
+  list-style: none;
+  background-color: $main-color-second;
 }
 
 .advantages-list__item {
   position: relative;
+
   padding: 10px 20px 18px 70px;
 
   &--house::before {
@@ -19,6 +22,7 @@
 
     width: 39px;
     height: 37px;
+
     background-image: url("../img/icon-house.svg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -33,6 +37,7 @@
 
     width: 32px;
     height: 38px;
+
     background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -47,6 +52,7 @@
 
     width: 39px;
     height: 36px;
+
     background-image: url("../img/icon-burger.svg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -67,19 +73,19 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: $font-weight-regular;
+
   overflow: hidden;
 }
 
 @media (min-width: $tablet-width) {
   .advantages-list {
     display: flex;
-
-    @include width(100%);
+    width: 100%;
     padding: 0;
   }
 
   .advantages-list__item {
-    @include width(33.3%);
+    width: 33.3%;
     min-height: 331px;
     padding: 160px 50px 25px;
 
@@ -120,6 +126,7 @@
 
   .advantages-list__title {
     margin-bottom: 21px;
+
     font-size: 21px;
   }
 }

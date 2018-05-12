@@ -3,9 +3,9 @@
 
   display: flex;
   flex-wrap: wrap;
-
-  @include width(100%);
+  width: 100%;
   padding: 26px 0 10px;
+
   font-family: $font-family;
   text-transform: uppercase;
   text-align: center;
@@ -45,6 +45,7 @@
   .feature__description {
     margin: 0 0 40px;
     padding: 0 15px 0;
+
     color: $main-color-second;
   }
 }
@@ -58,11 +59,11 @@
 }
 
 .feature__wrapper {
-  @include width(100%);
+  width: 100%;
 }
 
 .feature__title {
-  @include width(100%);
+  width: 100%;
   margin: 0 0 10px;
 
   font-size: 18px;
@@ -73,8 +74,7 @@
 
 .feature__number {
   display: block;
-
-  @include width(100%);
+  width: 100%;
   margin-bottom: 14px;
 
   font-size: 14px;
@@ -84,7 +84,7 @@
 }
 
 .feature__description {
-  @include width(100%);
+  width: 100%;
   margin: 0 0 19px;
   padding: 0 35px 0;
 
@@ -95,25 +95,24 @@
 }
 
 .feature__image-wrapper {
-  @include width(100%);
   display: flex;
   align-items: center;
+  width: 100%;
   margin: 0;
 
   overflow: hidden;
 }
 
 .feature__image {
-  @include width(100%);
   display: block;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .feature {
     display: flex;
     flex-wrap: wrap;
-
-    @include width(33.3%);
+    width: 33.3%;
     padding: 0;
 
     background-image: none;
@@ -129,11 +128,11 @@
   }
 
   .feature--special {
-    @include width(100%);
+    width: 100%;
     padding: 0;
 
     .feature__wrapper {
-      @include width(33.3%);
+      width: 33.3%;
       padding: 45px 45px 10px;
     }
 
@@ -144,7 +143,7 @@
   }
 
   .feature__wrapper {
-    @include width(100%);
+    width: 100%;
     height: 255px;
     padding: 47px 48px 20px;
 
@@ -154,8 +153,9 @@
   }
 
   .feature__title {
-    font-size: 21px;
     margin: 0 0 10px;
+
+    font-size: 21px;
   }
 
   .feature__title-text {
@@ -175,7 +175,7 @@
   }
 
   .feature__image-wrapper {
-    @include width(66.7%);
+    width: 66.7%;
     height: 255px;
   }
 }

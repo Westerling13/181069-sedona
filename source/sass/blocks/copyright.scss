@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   font-family: $font-family;
   font-size: 14px;
   text-transform: uppercase;
@@ -20,6 +21,8 @@
   margin-top: 3px;
 
   .copyright__icon {
+    display: block;
+
     fill: $extra-color-first;
   }
 }

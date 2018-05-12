@@ -1,5 +1,5 @@
 .site-list {
-  @include width(100%);
+  width: 100%;
 
   text-transform: uppercase;
   list-style: none;
@@ -11,8 +11,9 @@
 
 .site-list__item {
   &:first-child .site-list__link {
-    border-top: none;
     padding-top: 8px;
+
+    border-top: none;
   }
 
   &:last-child .site-list__link {
@@ -25,8 +26,7 @@
 
 .site-list__link {
   display: block;
-
-  @include width(100%);
+  width: 100%;
   padding: 7px 0;
 
   font-size: 18px;
@@ -56,13 +56,12 @@
 
 @media (min-width: $tablet-width) {
   .site-list {
-    @include width(100%);
     position: static;
 
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-between;
     justify-content: flex-start;
+    width: 100%;
 
     transform: none;
   }
@@ -82,15 +81,18 @@
   }
 
   .site-list__link {
+    width: 153px;
+
     font-size: 14px;
     color: $extra-color-first;
+
     background-color: transparent;
     background-image: none;
     border: none;
-    width: 153px;
 
     &:hover {
       color: $main-color-first;
+
       background-color: transparent;
     }
 

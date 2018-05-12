@@ -1,13 +1,12 @@
 .page__wrapper {
-  // min-width: $mobile-width;
   width: $mobile-width;
   margin: 0 auto;
+
   background-color: $main-color-second;
 }
 
 @media (min-width: $tablet-width) {
   .page__wrapper {
-    // min-width: $tablet-width;
     width: $tablet-width;
     margin: auto;
   }
@@ -21,6 +20,7 @@
   .page__wrapper {
     width: $desktop-width;
     margin: auto;
+
     box-shadow:
       -1px 0 20px rgba($extra-color-first, 0.15),
       1px 0 20px rgba($extra-color-first, 0.15);

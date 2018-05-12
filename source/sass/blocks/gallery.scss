@@ -1,11 +1,13 @@
 .gallery {
-  @include width(100%);
+  width: 100%;
+
   font-family: $font-family;
 }
 
 .gallery__list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -21,10 +23,11 @@
   }
 
   .gallery__item {
-    @include width(50%);
+    width: 50%;
 
     &:first-child {
       width: 100%;
+
       background-color: #f2f2f2;
     }
 

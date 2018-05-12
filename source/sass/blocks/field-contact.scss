@@ -1,5 +1,5 @@
 .field-contact {
-  @include width(100%);
+  width: 100%;
   margin: 0;
   padding: 0 0 0;
 
@@ -34,8 +34,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
-
-  @include width(100%);
+  width: 100%;
   margin: 0 0 12px;
 
   font-size: 14px;
@@ -73,10 +72,8 @@
 
 .field-contact__input {
   display: block;
-
   flex-grow: 1;
-
-  @include width(180px);
+  width: 180px;
   height: 58px;
   padding: 0 58px 0 21px;
 
@@ -91,6 +88,7 @@
 
   &::placeholder {
     color: $extra-color-first;
+
     opacity: 1;
   }
 
@@ -121,7 +119,7 @@
   }
 
   .field-contact__legend {
-    @include width(400px);
+    width: 400px;
     margin: 0 auto 0;
 
     @-moz-document url-prefix("") {
@@ -176,8 +174,8 @@
   }
 
   .field-contact__label {
-    @include width(50%);
     flex-wrap: nowrap;
+    width: 50%;
 
     &:nth-child(2n-1) {
       width: 41.5%;
@@ -201,7 +199,7 @@
   }
 
   .field-contact__label-text {
-    margin: 0 16px 0 0;
     flex-shrink: 0;
+    margin: 0 16px 0 0;
   }
 }

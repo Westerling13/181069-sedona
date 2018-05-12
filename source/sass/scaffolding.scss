@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   min-width: 320px;
   margin: 0;
@@ -7,10 +15,6 @@ body {
 img {
   max-width: 100%;
   height: auto;
-}
-
-svg {
-  display: block;
 }
 
 .visually-hidden:not(:focus):not(:active) {

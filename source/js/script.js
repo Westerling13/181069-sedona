@@ -13,6 +13,7 @@ var formTel = document.querySelector('[name=tel]');
 var formEmail = document.querySelector('[name=email]');
 var map;
 var marker;
+var image;
 
 
 navMain.classList.remove('main-nav--no-js');
@@ -54,9 +55,10 @@ function initMap() {
             disableDefaultUI: false
         });
 
+        image = "img/icon-map-marker.svg",
         marker = new google.maps.Marker({
             position: {lat: 34.774615, lng: -111.789784},
             map: map,
-            icon: "../img/icon-map-marker.svg"
+            icon: image
         });
 };

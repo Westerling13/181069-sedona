@@ -13,7 +13,6 @@
 
 .photo-card__link {
   display: block;
-  margin-bottom: 15px;
 }
 
 .photo-card__image {
@@ -23,13 +22,23 @@
 }
 
 .photo-card__caption {
+  padding: 15px 0 0;
+}
+
+.photo-card__caption-wrapper {
+  margin-bottom: 8px;
+}
+
+.photo-card__name {
+  margin: 0;
+
   text-transform: uppercase;
   font-weight: $font-weight-bold;
   color: $extra-color-first;
 }
 
 .photo-card__author {
-  margin: 0 0 8px;
+  margin: 0;
 
   font-weight: $font-weight-regular;
   color: $extra-color-second;
@@ -56,18 +65,27 @@
   border: none;
 
   cursor: pointer;
+
+  &:hover .photo-card__like-icon {
+    fill: $extra-color-first;
+  }
 }
 
-.photo-card__like-indicator,
+.photo-card__like-indicator {
+  display: block;
+}
+
 .photo-card__like-icon {
   display: block;
+
+  fill: #b2b2b2;
 }
 
 @media (min-width: $tablet-width) {
   .photo-card {
     position: relative;
 
-    padding: 0 0 17px;
+    padding: 0;
 
     border: none;
 
@@ -76,21 +94,43 @@
     }
   }
 
+  .photo-card__photo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   .photo-card__caption {
-    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 15px 21px 17px;
+  }
+
+  .photo-card__caption-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    max-width: 75%;
+    margin-bottom: 0;
+  }
+
+  .photo-card__name {
+    width: 100%;
   }
 
   .photo-card__author {
+    width: 100%;
     margin-bottom: 0;
-    padding: 0 20px;
   }
 
   .photo-card__like {
-    position: absolute;
-    right: 21px;
-    bottom: 27px;
-
-    width: 63px;
+    display: flex;
+    align-items: center;
+    min-width: 63px;
   }
 
   .photo-card__like-button {
@@ -105,20 +145,6 @@
     padding: 0;
   }
 
-  .photo-card__photo::before {
-    content: "";
-
-    position: absolute;
-    bottom: 0;
-    left: auto;
-
-    display: block;
-    width: 100%;
-    height: 80px;
-
-    background-color: rgba($extra-color-first, 0.3);
-  }
-
   .photo-card__link {
     margin: 0;
   }
@@ -126,25 +152,27 @@
   .photo-card__caption {
     position: absolute;
     right: auto;
-    bottom: 41px;
+    bottom: 0;
 
     color: $main-color-second;
+
+    background-color: rgba($extra-color-first, 0.3);
   }
 
-  .photo-card__author {
-    position: absolute;
-    bottom: 17px;
-
-    color: $main-color-second;
-  }
-
+  .photo-card__name,
+  .photo-card__author,
   .photo-card__like {
-    bottom: 28px;
-
     color: $main-color-second;
   }
 
   .photo-card__like-icon {
     fill: $main-color-second;
+  }
+
+  .photo-card__like-button {
+    &:hover .photo-card__like-icon {
+      fill: $main-color-second;
+      opacity: 0.6;
+    }
   }
 }

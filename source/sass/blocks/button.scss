@@ -27,7 +27,9 @@
     background-color: $button-color-active;
   }
 
-  &:disabled {
+  &:disabled,
+  &--disabled {
     background-color: $button-color-disabled;
+    pointer-events: none;
   }
 }

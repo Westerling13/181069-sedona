@@ -7,12 +7,12 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var minify = require("gulp-csso");
-var htmlmin = require('gulp-htmlmin');
+var htmlmin = require("gulp-htmlmin");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
-var uglify = require('gulp-uglify');
-var pump = require('pump');
+var uglify = require("gulp-uglify");
+var pump = require("pump");
 var run = require("run-sequence");
 var del = require("del");
 
@@ -20,7 +20,7 @@ gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sass({
-      includePaths: require('node-normalize-scss').includePaths
+      includePaths: require("node-normalize-scss").includePaths
     }))
     .pipe(postcss([
       autoprefixer()
@@ -32,10 +32,10 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-gulp.task('minify', function() {
-  return gulp.src('source/*.html')
+gulp.task("minify", function() {
+  return gulp.src("source/*.html")
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("images", function() {
@@ -54,11 +54,11 @@ gulp.task("webp", function() {
     .pipe(gulp.dest("source/img"));
 });
 
-gulp.task('compress', function (cb) {
-  return gulp.src('source/js/script.js')
+gulp.task("compress", function (cb) {
+  return gulp.src("source/js/script.js")
     .pipe(uglify())
     .pipe(rename("script.min.js"))
-    .pipe(gulp.dest('source/js'));
+    .pipe(gulp.dest("source/js"));
 });
 
 gulp.task("serve", function() {

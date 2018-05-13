@@ -1,5 +1,5 @@
 .page-footer {
-  @include width(100%);
+  width: 100%;
   padding: 36px 0 15px;
 
   font-family: $font-family;
@@ -9,6 +9,7 @@
 
 .page-footer__title {
   margin: 0 0 36px;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: $font-weight-bold;

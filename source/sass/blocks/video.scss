@@ -1,5 +1,5 @@
 .video {
-  @include width(100%);
+  width: 100%;
   padding: 33px 0 39px;
 
   font-family: $font-family;
@@ -10,7 +10,7 @@
 }
 
 .video__title {
-  @include width(100%);
+  width: 100%;
   margin: 0 0 26px;
   padding: 0;
 
@@ -20,7 +20,7 @@
 }
 
 .video__description {
-  @include width(100%);
+  width: 100%;
   margin: 0 0 35px;
   padding: 0 25px;
 
@@ -32,6 +32,8 @@
 @media (min-width: $tablet-width) {
   .video {
     padding: 61px 0 39px;
+
+    border-top: none;
   }
 
   .video__title {
@@ -40,8 +42,8 @@
   }
 
   .video__description {
-    padding: 0 165px;
     margin-bottom: 72px;
+    padding: 0 165px;
   }
 }
 

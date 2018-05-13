@@ -1,5 +1,5 @@
 .site-list {
-  @include width(100%);
+  width: 100%;
 
   text-transform: uppercase;
   list-style: none;
@@ -9,10 +9,24 @@
   }
 }
 
+.site-list__item {
+  &:first-child .site-list__link {
+    padding-top: 8px;
+
+    border-top: none;
+  }
+
+  &:last-child .site-list__link {
+    border-bottom: none;
+    background-image: url("../img/link-gradient.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}
+
 .site-list__link {
   display: block;
-
-  @include width(100%);
+  width: 100%;
   padding: 7px 0;
 
   font-size: 18px;
@@ -38,47 +52,47 @@
 
     background-color: $button-color-active;
   }
-
-  &--first-child {
-    border-top: none;
-    padding-top: 8px;
-  }
-
-  &--last-child {
-    border-bottom: none;
-    background-image: url("../img/link-gradient.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
-  }
 }
 
 @media (min-width: $tablet-width) {
   .site-list {
-    @include width(100%);
     position: static;
 
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
 
     transform: none;
   }
 
   .site-list__item {
-    &:nth-child(3) {
-      margin-left: 155px;
+    &:first-child .site-list__link {
+      padding-top: 7px;
+    }
+
+    &:nth-child(4n-2) {
+      margin-right: 156px;
+    }
+
+    &:last-child .site-list__link {
+      background-image: none;
     }
   }
 
   .site-list__link {
+    width: 153px;
+
     font-size: 14px;
     color: $extra-color-first;
+
     background-color: transparent;
     background-image: none;
     border: none;
-    width: 154px;
 
     &:hover {
       color: $main-color-first;
+
       background-color: transparent;
     }
 
@@ -106,8 +120,15 @@
   }
 
   .site-list__item {
-    &:nth-child(3) {
-      margin-left: 245px;
+    margin-right: 87px;
+
+    &:nth-child(4n-2) {
+      margin-right: 330px;
+    }
+
+    &:nth-child(4n),
+    &:last-child {
+      margin-right: 0;
     }
   }
 }

@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   min-width: 320px;
   margin: 0;
@@ -7,10 +17,6 @@ body {
 img {
   max-width: 100%;
   height: auto;
-}
-
-svg {
-  display: block;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -30,6 +36,7 @@ svg {
   font-weight: normal;
   font-family: "PT Sans";
   font-style: normal;
+  font-display: swap;
   src:
     url("../fonts/ptsans.woff2") format("woff2"),
     url("../fonts/ptsans.woff") format("woff");
@@ -39,6 +46,7 @@ svg {
   font-weight: bold;
   font-family: "PT Sans";
   font-style: normal;
+  font-display: swap;
   src:
     url("../fonts/ptsansbold.woff2") format("woff2"),
     url("../fonts/ptsansbold.woff") format("woff");

@@ -1,6 +1,7 @@
 .hotel-search {
-  @include width(100%);
+  width: 100%;
   padding: 26px 15px 49px;
+
   font-family: $font-family;
   text-transform: uppercase;
   text-align: center;
@@ -8,6 +9,7 @@
 
 .hotel-search__title {
   margin: 0 0 19px;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: $font-weight-bold;
@@ -15,6 +17,7 @@
 
 .hotel-search__description {
   margin: 0 0 35px;
+
   font-size: 14px;
   line-height: 24px;
   font-weight: $font-weight-regular;
@@ -31,13 +34,14 @@
   }
 
   .hotel-search__title {
-    font-size: 30px;
     margin-bottom: 31px;
+
+    font-size: 30px;
   }
 
   .hotel-search__description {
-    padding: 0 140px;
     margin-bottom: 42px;
+    padding: 0 140px;
   }
 
   .hotel-search__text {

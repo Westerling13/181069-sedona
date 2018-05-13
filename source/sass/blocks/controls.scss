@@ -1,8 +1,7 @@
 .controls {
   display: flex;
   justify-content: space-between;
-
-  @include width(87.5%);
+  width: 87.5%;
   padding: 22px 23px 24px;
 
   background-color: #f2f2f2;
@@ -33,6 +32,8 @@
 }
 
 .controls__button-icon {
+  display: block;
+
   fill: #5c6870;
 }
 

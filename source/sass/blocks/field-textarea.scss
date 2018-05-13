@@ -1,5 +1,5 @@
 .field-textarea {
-  @include width(100%);
+  width: 100%;
   margin: 0;
   padding: 0 0 0;
 
@@ -29,8 +29,7 @@
 
 .field-textarea__input {
   display: block;
-
-  @include width(100%);
+  width: 100%;
   height: 160px;
   padding: 17px 21px;
 
@@ -75,7 +74,7 @@
   }
 
   .field-textarea__legend {
-    @include width(400px);
+    width: 400px;
     margin: 0 auto 0;
 
     @-moz-document url-prefix("") {

@@ -4,7 +4,7 @@
   font-size: 14px;
   line-height: 24px;
 
-  border-top: 1px solid darken($main-color-second, 10.3%);
+  border-top: 1px solid #e5e5e5;
 }
 
 .photo-card__photo {
@@ -58,7 +58,8 @@
   cursor: pointer;
 }
 
-.photo-card__like-indicator {
+.photo-card__like-indicator,
+.photo-card__like-icon {
   display: block;
 }
 
@@ -71,7 +72,7 @@
     border: none;
 
     &--first-child {
-      @include width(100%);
+      width: 100%;
     }
   }
 
@@ -100,6 +101,7 @@
 @media (min-width: $desktop-width) {
   .photo-card {
     position: relative;
+
     padding: 0;
   }
 

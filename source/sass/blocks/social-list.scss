@@ -1,6 +1,8 @@
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  max-width: 690px;
   padding: 0;
 
   list-style: none;
@@ -27,7 +29,8 @@
 
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $button-color-hover;
   }
 
@@ -41,5 +44,7 @@
 }
 
 .social-list__icon {
+  display: block;
+
   fill: $main-color-second;
 }

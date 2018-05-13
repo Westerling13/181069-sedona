@@ -1,19 +1,19 @@
 .review {
   position: relative;
 
-  @include width(100%);
+  width: 100%;
   padding: 0 0 37px;
 
   font-family: $font-family;
 }
 
 .review__button {
-  @include width(87.5%);
+  width: 87.5%;
   margin: auto;
 }
 
 .review__form {
-  @include width(100%);
+  width: 100%;
 }
 
 .review__modal {
@@ -39,7 +39,7 @@
   }
 
   .review__form {
-    @include width(100%);
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -85,6 +85,7 @@
 
   .review__button {
     padding-left: 0;
+
     text-align: center;
   }
 

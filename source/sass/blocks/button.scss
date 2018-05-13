@@ -26,4 +26,8 @@
 
     background-color: $button-color-active;
   }
+
+  &:disabled {
+    background-color: $button-color-disabled;
+  }
 }
